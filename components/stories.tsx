@@ -63,7 +63,7 @@ const Stories = ({ posts }: Props) => {
             selectedGenre === null ? "bg-violet-100 text-black" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
-        >All
+        >All subjects
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
