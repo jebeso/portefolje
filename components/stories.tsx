@@ -45,14 +45,14 @@ const Stories = ({ posts }: Props) => {
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = "mr-1 mb-2 border border-violet-400 rounded-full px-3 py-1";
+  const searchStyling = buttonStyling + " mr-0";
 
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center sm:text-left">
         <input
-          className={buttonStyling}
+          className={searchStyling}
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
