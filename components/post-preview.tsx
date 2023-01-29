@@ -9,9 +9,17 @@ type Props = {
   date: string;
   excerpt: string;
   slug: string;
+  genre: string;
 };
 
-const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
+const PostPreview = ({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  slug,
+  genre,
+}: Props) => {
   return (
     <div>
       <div className="mb-1">
@@ -21,14 +29,18 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
         <Link
           as={`/posts/${slug}`}
           href="/posts/[slug]"
-          className="hover:underline decoration-blue-600"
+          className="hover:underline decoration-violet-500"
         >
           {title}
         </Link>
       </h3>
       <div className="text-lg text-slate-600">
-        <DateFormatter dateString={date} />
+        <span>
+          <DateFormatter dateString={date} />
+        </span>
       </div>
+      {genre}
+
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
   );

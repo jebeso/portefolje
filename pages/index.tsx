@@ -9,6 +9,8 @@ import Post from "../interfaces/post";
 
 import { Playfair_Display } from "@next/font/google";
 import TopBar from "../components/topbar";
+import Filter from "../components/filter";
+import About from "../components/icons";
 
 const playfairDisplay = Playfair_Display({
   weight: "400",
@@ -31,6 +33,9 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <TopBar />
           <Intro />
+          <About />
+          <br></br>
+          <Filter />
           {<Stories posts={allPosts} />}
         </Container>
       </Layout>
@@ -45,6 +50,7 @@ export const getStaticProps = async () => {
     "slug",
     "coverImage",
     "excerpt",
+    "genre",
   ]);
 
   return {

@@ -4,6 +4,7 @@ type PostType = {
   date: string;
   coverImage: string;
   excerpt: string;
+  genre: string;
   ogImage: {
     url: string;
   };
