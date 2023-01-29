@@ -7,6 +7,29 @@
 .markdown ol,
 .markdown blockquote {
   @apply my-6;
+
+}
+
+.markdown img {
+  border-radius: 7px;
+}
+
+.markdown code {
+  display: inline-block;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid rgb(139 92 246);;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 .markdown h2 {
@@ -15,4 +38,10 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(59 130 246);
 }

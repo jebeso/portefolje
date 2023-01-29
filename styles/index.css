@@ -10,4 +10,12 @@
 
 html {
     background-color: white;
+    overflow: auto;
+}
+
+@media screen and (min-width: 960px) {
+  html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+  }
 }

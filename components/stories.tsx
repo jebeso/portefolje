@@ -1,13 +1,14 @@
 import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
+import BottomBar from "./bottombar";
 
-type Props = {
+export type Props = {
   posts: Post[];
 };
 
 export enum Genre {
-  Programming = "IT",
+  Code = "Code",
   Prose = "Prose",
   Fiction = "Fiction",
 }
@@ -69,7 +70,7 @@ const Stories = ({ posts }: Props) => {
           <button
             key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-100 text-black" : ""
+              selectedGenre === genre ? "bg-violet-300 text-black" : ""
             }`}
             onClick={() => {
               if (selectedGenre === genre) {
@@ -97,9 +98,11 @@ const Stories = ({ posts }: Props) => {
           />
         ))}
         {filteredPosts.length === 0 && (
-            <p className="text-2xl">No results 😢</p>
+            <p className="text-4xl pt-20">
+              No results for your selection.</p>
         )}
       </div>
+      <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
     </section>
   );
 };
