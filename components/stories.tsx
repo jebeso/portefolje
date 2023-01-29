@@ -56,7 +56,7 @@ const Stories = ({ posts }: Props) => {
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Type to filter articles ..."
+          placeholder="Type to filter articles"
         />{" "}
         <button
           className={`${buttonStyling} ${
