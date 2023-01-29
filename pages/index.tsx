@@ -4,16 +4,14 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
-
 import { Playfair_Display } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Filter from "../components/filter";
 import Icons from "../components/icons";
 import BottomBar from "../components/bottombar";
 
-const playfairDisplay = Playfair_Display({
+export const playfairDisplay = Playfair_Display({
   weight: "400",
   subsets: ["latin"],
 });
@@ -23,13 +21,11 @@ type Props = {
 };
 
 export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
   return (
     <div className={playfairDisplay.className}>
       <Layout>
         <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+          <title>{`jens.bechsor.no`}</title>
         </Head>
         <Container>
           <TopBar />

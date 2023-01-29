@@ -10,6 +10,7 @@ export enum Genre {
   Psychology = "Psychology",
   Linux = "Linux",
   Programming = "Programming",
+  Fiction = "Fiction",
 }
 
 const Stories = ({ posts }: Props) => {
@@ -44,33 +45,40 @@ const Stories = ({ posts }: Props) => {
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1";
+  const searchStyling = buttonStyling + " w-50 mr-0";
 
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center sm:text-left">
         <input
-          className={buttonStyling}
+          className={searchStyling}
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Search..."
+          placeholder="Search articles ..."
         />{" "}
         <button
           className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-800 text-white" : ""
+            selectedGenre === null ? "bg-violet-200 text-black" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          All!
+          All
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
             key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-800 text-white" : ""
+              selectedGenre === genre ? "bg-violet-500 text-white" : ""
             }`}
-            onClick={() => handleGenreFilter(genre)}
+            onClick={() => {
+              if (selectedGenre === genre) {
+                setSelectedGenre(null);
+              } else {
+                setSelectedGenre(genre);
+              }
+            }}
           >
             {genre}
           </button>
@@ -90,8 +98,8 @@ const Stories = ({ posts }: Props) => {
           />
         ))}
         {filteredPosts.length === 0 && (
-          <div className="text-center">
-            <p className="text-lg">No posts found 😢</p>
+          <div className="justify-center w-screen">
+            <p className="text-2xl pt-20">No results, buddy 😢</p>
           </div>
         )}
       </div>

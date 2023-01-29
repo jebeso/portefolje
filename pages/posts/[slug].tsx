@@ -12,6 +12,8 @@ import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
+import BottomBar from "../../components/bottombar";
+import { playfairDisplay } from "..";
 
 type Props = {
   post: PostType;
@@ -25,32 +27,35 @@ export default function Post({ post, morePosts, preview }: Props) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout preview={preview}>
-      <Container>
-        <TopBar />
-        <Header />
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
-      </Container>
-    </Layout>
+    <div className={playfairDisplay.className}>
+      <Layout preview={preview}>
+        <Container>
+          <TopBar />
+          <Header />
+          {router.isFallback ? (
+            <PostTitle>Loading…</PostTitle>
+          ) : (
+            <>
+              <article className="mb-32">
+                <Head>
+                  <title>
+                    {post.title} | jens.bechsor.no {CMS_NAME}
+                  </title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+                <PostHeader
+                  title={post.title}
+                  coverImage={post?.coverImage}
+                  date={post.date}
+                />
+                <PostBody content={post.content} />
+              </article>
+              <BottomBar />
+            </>
+          )}
+        </Container>
+      </Layout>
+    </div>
   );
 }
 
