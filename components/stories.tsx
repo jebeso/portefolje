@@ -2,6 +2,7 @@ import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
+import Image from "next/image";
 
 export type Props = {
   posts: Post[];
@@ -64,7 +65,8 @@ const Stories = ({ posts }: Props) => {
             selectedGenre === null ? "bg-violet-100 text-black" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
-        >All subjects
+        >
+          All subjects
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
@@ -98,8 +100,16 @@ const Stories = ({ posts }: Props) => {
           />
         ))}
         {filteredPosts.length === 0 && (
-            <p className="text-4xl pt-20">
-              No results for your selection.</p>
+          <div className="text-3xl pt-20">
+            <>No results for selection.</>
+            <Image
+              className="rounded-2xl mt-6 ml-12"
+              src="/assets/what-huh.gif"
+              alt="?"
+              height={200}
+              width={200}
+            ></Image>
+          </div>
         )}
       </div>
       <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
