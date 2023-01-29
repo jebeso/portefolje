@@ -1,7 +1,8 @@
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 
 const size = 30;
-const hoverCSS = "transition-colors duration-200 hover:text-violet-800";
+const hoverCSS = "transition-colors duration-200 hover:text-violet-600";
+
 const Icons = () => {
   return (
     <div className={"flex gap-2 justify-center md:justify-start"}>
