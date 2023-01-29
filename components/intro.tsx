@@ -5,7 +5,7 @@ const Intro = () => {
         Jens Bech-Sørensen
       </h1>
       <h4 className="text-center text-violet-800 md:text-left text-lg mt-4 md:pl-8 font-semibold">
-        This is where I write!
+        This is where I write stuff!
       </h4>
     </section>
   );

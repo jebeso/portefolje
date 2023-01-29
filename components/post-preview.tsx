@@ -15,10 +15,7 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
     <div>
-      <div className="mb-1">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-3xl leading-snug">
+            <h3 className="text-3xl leading-snug pb-2">
         <Link
           as={`/posts/${slug}`}
           href="/posts/[slug]"
@@ -26,12 +23,17 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
         >
           {title}
         </Link>
-      </h3>
-      <div className="text-lg text-slate-600">
+        <div className="text-lg text-slate-600">
         <span>
           <DateFormatter dateString={date} />
         </span>
       </div>
+      </h3>
+      <div className="mb-1">
+        <CoverImage slug={slug} title={title} src={coverImage} />
+      </div>
+
+
 
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>

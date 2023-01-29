@@ -9,13 +9,14 @@ const BottomBar = () => {
   };
 
   return (
-    <>
-      <button className="mx-auto text-2xl" onClick={handleClick}>
-        <div className="">To the top!</div>
+    <div className="sm:text-right text-center">
+      <button className="mx-auto text-3xl mb-20 sm:mb-0 pb-4" onClick={handleClick}>
+        To the top! 👏
       </button>
       <div className="pt-1 bg-violet-500 rounded-t-md sticky bottom-0"></div>
-    </>
+    </div>
   );
-};
+  };
+  
 
 export default BottomBar;

@@ -31,7 +31,6 @@ export default function Index({ allPosts }: Props) {
           <TopBar />
           <Intro />
           <Icons />
-          <br></br>
           <Filter />
           {<Stories posts={allPosts} />}
           <BottomBar />

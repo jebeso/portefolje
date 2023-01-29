@@ -17,6 +17,7 @@ const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
 
+  //TODO: delete?
   const handleGenreFilter = (genre: Genre) => {
     setSelectedGenre(genre);
   };
@@ -45,14 +46,17 @@ const Stories = ({ posts }: Props) => {
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1";
-  const searchStyling = buttonStyling + " w-50 mr-0";
+
+  const searchStyling = "mr-1 mb-2 border border-violet-400 rounded-full px-3 py-1";
+
+  //const searchStyling = buttonStyling + " w-1/3 xl:w-1/2 mr-0";
 
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center sm:text-left">
         <input
-          className={searchStyling}
+          className={buttonStyling}
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
@@ -98,9 +102,7 @@ const Stories = ({ posts }: Props) => {
           />
         ))}
         {filteredPosts.length === 0 && (
-          <div className="justify-center w-screen">
-            <p className="text-2xl pt-20">No results, buddy 😢</p>
-          </div>
+            <p className="text-2xl">No results 😢</p>
         )}
       </div>
     </section>
