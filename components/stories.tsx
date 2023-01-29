@@ -103,7 +103,7 @@ const Stories = ({ posts }: Props) => {
           <div className="text-3xl pt-20">
             <>No results for selection.</>
             <Image
-              className="rounded-2xl mt-6 ml-12"
+              className="rounded-3xl mt-2 opacity-10"
               src="/assets/what-huh.gif"
               alt="?"
               height={200}
