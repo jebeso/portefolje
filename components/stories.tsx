@@ -36,7 +36,7 @@ const Stories = ({ posts }: Props) => {
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          All
+          All!
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
@@ -62,6 +62,11 @@ const Stories = ({ posts }: Props) => {
             genre={post.genre}
           />
         ))}
+        {filteredPosts.length === 0 && (
+          <div className="text-center">
+            <p className="text-lg">No posts found 😢</p>
+          </div>
+        )}
       </div>
     </section>
   );

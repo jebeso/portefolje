@@ -39,7 +39,6 @@ const PostPreview = ({
           <DateFormatter dateString={date} />
         </span>
       </div>
-      {genre}
 
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
