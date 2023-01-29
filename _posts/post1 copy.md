@@ -1,5 +1,5 @@
 ---
-title: 'Post 1'
+title: 'Postto'
 excerpt: 'Excerpt here'
 genre: 'Linux'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
