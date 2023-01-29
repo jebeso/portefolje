@@ -1,7 +1,5 @@
 const TopBar = () => {
-    return <div className="pt-2 bg-blue-600 rounded-b-md">
+  return <div className="pt-1 bg-blue-600 rounded-b-md"></div>;
+};
 
-        </div>
-}
-
-export default TopBar
+export default TopBar;
