@@ -11,6 +11,7 @@ import { Playfair_Display } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Filter from "../components/filter";
 import Icons from "../components/icons";
+import BottomBar from "../components/bottombar";
 
 const playfairDisplay = Playfair_Display({
   weight: "400",
@@ -37,6 +38,7 @@ export default function Index({ allPosts }: Props) {
           <br></br>
           <Filter />
           {<Stories posts={allPosts} />}
+          <BottomBar />
         </Container>
       </Layout>
     </div>
