@@ -36,7 +36,7 @@ export default function Post({ post, morePosts, preview }: Props) {
             <PostTitle>Loading…</PostTitle>
           ) : (
             <>
-              <article className="mb-32">
+              <article className="mb-32 xl:px-40">
                 <Head>
                   <title>
                     {post.title} | jens.bechsor.no {CMS_NAME}
