@@ -18,9 +18,9 @@ const Stories = ({ posts }: Props) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   //TODO: delete?
-  const handleGenreFilter = (genre: Genre) => {
-    setSelectedGenre(genre);
-  };
+  // const handleGenreFilter = (genre: Genre) => {
+  //   setSelectedGenre(genre);
+  // };
 
   const handleSearchTerm = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -45,11 +45,8 @@ const Stories = ({ posts }: Props) => {
       : posts;
 
   const buttonStyling =
-    "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1";
-
+    "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
   const searchStyling = "mr-1 mb-2 border border-violet-400 rounded-full px-3 py-1";
-
-  //const searchStyling = buttonStyling + " w-1/3 xl:w-1/2 mr-0";
 
   return (
     <section>
@@ -64,7 +61,7 @@ const Stories = ({ posts }: Props) => {
         />{" "}
         <button
           className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-200 text-black" : ""
+            selectedGenre === null ? "bg-violet-100 text-black" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
         >
@@ -74,7 +71,7 @@ const Stories = ({ posts }: Props) => {
           <button
             key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-500 text-white" : ""
+              selectedGenre === genre ? "bg-violet-100 text-black" : ""
             }`}
             onClick={() => {
               if (selectedGenre === genre) {
