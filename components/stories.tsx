@@ -7,9 +7,8 @@ type Props = {
 };
 
 export enum Genre {
-  Psychology = "Psychology",
-  Linux = "Linux",
-  Programming = "Programming",
+  Programming = "IT",
+  Prose = "Prose",
   Fiction = "Fiction",
 }
 
@@ -57,15 +56,14 @@ const Stories = ({ posts }: Props) => {
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Search articles ..."
+          placeholder="Type to filter articles ..."
         />{" "}
         <button
           className={`${buttonStyling} ${
             selectedGenre === null ? "bg-violet-100 text-black" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
-        >
-          All
+        >All
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
