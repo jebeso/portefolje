@@ -10,8 +10,8 @@ export type Props = {
 
 export enum Genre {
   Code = "Code",
-  Prose = "Prose",
-  Fiction = "Fiction",
+  Prose = "📄 Prose",
+  Fiction = " 📜💻Fiction",
 }
 
 const Stories = ({ posts }: Props) => {
@@ -66,7 +66,7 @@ const Stories = ({ posts }: Props) => {
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          All subjects
+          💜 All subjects
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
@@ -100,15 +100,8 @@ const Stories = ({ posts }: Props) => {
           />
         ))}
         {filteredPosts.length === 0 && (
-          <div className="text-3xl pt-20">
-            <>No results for selection.</>
-            <Image
-              className="rounded-3xl mt-2 opacity-10"
-              src="/assets/what-huh.gif"
-              alt="?"
-              height={200}
-              width={200}
-            ></Image>
+          <div className="text-3xl pt-1 text-violet-800">
+            No results for that selection. 💜
           </div>
         )}
       </div>
