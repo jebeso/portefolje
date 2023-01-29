@@ -33,7 +33,7 @@ export default function Index({ allPosts }: Props) {
           <Icons />
           <Filter />
           {<Stories posts={allPosts} />}
-          <BottomBar />
+          <BottomBar/>
         </Container>
       </Layout>
     </div>

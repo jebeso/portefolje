@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const BottomBar = () => {
   const handleClick = () => {
     window.scrollTo({
@@ -8,6 +9,7 @@ const BottomBar = () => {
     });
   };
 
+  //TODO: dont render button if filteredarticles === 0
   return (
     <div className="sm:text-right text-center">
       <button className="mx-auto text-3xl mb-16 sm:mb-0 pb-4" onClick={handleClick}>
