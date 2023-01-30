@@ -65,7 +65,7 @@ setSelectedGenre
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          <div className="text-violet-900">💜 Any subject</div>
+          💜 Any subject
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
