@@ -2,7 +2,7 @@ import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
-import Image from "next/image";
+import BiCode from "react-icons"
 
 export type Props = {
   posts: Post[];
@@ -10,18 +10,17 @@ export type Props = {
 
 export enum Genre {
   Code = "Code",
-  Prose = "📄 Prose",
-  Fiction = " 📜💻Fiction",
+  Prose = "Prose",
+  Fiction = "Fiction",
 }
 
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-
-  //TODO: delete?
-  // const handleGenreFilter = (genre: Genre) => {
-  //   setSelectedGenre(genre);
-  // };
+setSelectedGenre
+  const handleGenreFilter = (genre: Genre) => {
+    (genre);
+  };
 
   const handleSearchTerm = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -62,17 +61,17 @@ const Stories = ({ posts }: Props) => {
         />{" "}
         <button
           className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-100 text-black" : ""
+            selectedGenre === null ? "bg-violet-100" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          💜 All subjects
+          <div className="text-violet-900">💜 Any subject</div>
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
             key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-300 text-black" : ""
+              selectedGenre === genre ? "bg-violet-100 text-violet-900" : ""
             }`}
             onClick={() => {
               if (selectedGenre === genre) {
@@ -101,7 +100,7 @@ const Stories = ({ posts }: Props) => {
         ))}
         {filteredPosts.length === 0 && (
           <div className="text-3xl pt-1 text-violet-800">
-            No results for that selection. 💜
+            No results for that selection...
           </div>
         )}
       </div>

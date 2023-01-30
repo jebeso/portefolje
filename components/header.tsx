@@ -6,8 +6,9 @@ const Header = () => {
     <h2 className="text-xl md:text-2xl tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
       <Link href="/" className="hover:underline decoration-violet-800 flex items-center">
         <BiArrowBack className="mr-2"/>
-        Take me home!
-      </Link>
+        Take me home</Link>
+        <div className="text-violet-50 select-none pl-8">country road!</div>
+      
     </h2>
   );
 };
