@@ -13,7 +13,7 @@ const BottomBar = (props) => {
       {props.filteredPosts > 0 ? (
         <div className="pt-10 text-center">
           <button
-            className="pb-12 mx-auto text-3xl mb-16"
+            className="pb-12 mx-auto text-3xl mb-16 text-violet-700"
             onClick={handleClick}
           >
             To the top! 👏

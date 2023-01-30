@@ -7,7 +7,7 @@ const Header = () => {
       <Link href="/" className="hover:underline decoration-violet-800 flex items-center">
         <BiArrowBack className="mr-2"/>
         Take me home</Link>
-        <div className="text-violet-100 select-none pl-8">country road!</div>
+        <div className="text-violet-100 select-none pl-8">country road</div>
       
     </h2>
   );
