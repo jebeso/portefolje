@@ -46,7 +46,7 @@ setSelectedGenre
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + " mr-0 w-40";
+  const searchStyling = buttonStyling + " mr-0 w-44";
 
   return (
     <section>
