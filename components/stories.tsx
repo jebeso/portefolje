@@ -46,7 +46,7 @@ setSelectedGenre
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + " mr-0 w-36";
+  const searchStyling = buttonStyling + " mr-0 w-32";
 
   return (
     <section>
@@ -57,7 +57,7 @@ setSelectedGenre
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Type to filter..."
+          placeholder="Type to filter"
         />{" "}
         <button
           className={`${buttonStyling} ${
