@@ -57,7 +57,7 @@ setSelectedGenre
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Type to filter..."
+          placeholder="Search keywords..."
         />{" "}
         <button
           className={`${buttonStyling} ${
@@ -99,7 +99,7 @@ setSelectedGenre
           />
         ))}
         {filteredPosts.length === 0 && (
-          <div className="text-3xl pt-1 text-violet-800 text-center">
+          <div className="text-3xl pt-1 text-violet-800 text-center select-none">
             No results for that selection...
           </div>
         )}
