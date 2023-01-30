@@ -1,19 +1,20 @@
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
+import { FiGithub } from "react-icons/fi"
 
-const size = 30;
-const hoverCSS = "transition-colors duration-200 hover:text-violet-600";
+const size = 25;
+const hoverCSS = "transition-colors duration-200 hover:scale-125 transition duration-200 ease-in-out text-violet-500";
 
 const Icons = () => {
   return (
     <div className={"flex gap-2 justify-center md:justify-start"}>
       <a target="_blank" href="https://www.linkedin.com/in/jensbs/">
-        <AiFillLinkedin size={size} className={hoverCSS}></AiFillLinkedin>
+        <AiOutlineLinkedin size={size} className={hoverCSS}></AiOutlineLinkedin>
       </a>
       <a target="_blank" href="mailto:jens@bechsor.no">
-        <AiFillMail size={size} className={hoverCSS}></AiFillMail>
+        <AiOutlineMail size={size} className={hoverCSS}></AiOutlineMail>
       </a>
       <a target="_blank" href="https://github.com/jensbech">
-        <AiFillGithub size={size} className={hoverCSS}></AiFillGithub>
+        <FiGithub size={size} className={hoverCSS}></FiGithub>
       </a>
     </div>
   );
