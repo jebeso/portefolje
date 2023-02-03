@@ -13,7 +13,7 @@ import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
 import BottomBar from "../../components/bottombar";
-import { playfairDisplay } from "..";
+import { ptSerif } from "..";
 
 type Props = {
   post: PostType;
@@ -34,7 +34,7 @@ export default function Post({ post, morePosts, preview }: Props) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div className={playfairDisplay.className}>
+    <div className={ptSerif.className}>
       <Layout preview={preview}>
         <Container>
           <TopBar />

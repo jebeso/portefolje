@@ -9,7 +9,7 @@ export type Props = {
 };
 
 export enum Genre {
-  Code = "Code",
+  Tech = "Tech",
   Prose = "Prose",
   Fiction = "Fiction",
 }

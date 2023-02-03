@@ -1,13 +1,13 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
-import { Playfair_Display } from '@next/font/google'
+import { PT_Serif } from '@next/font/google'
 
-const playfairDisplay = Playfair_Display({
+const ptSerif = PT_Serif({
   weight: '400',
   subsets: ['latin'],
 })
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component className={playfairDisplay.className} {...pageProps} />
+  return <Component className={ptSerif.className} {...pageProps} />
 }

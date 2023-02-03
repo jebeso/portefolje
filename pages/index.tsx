@@ -5,12 +5,12 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
-import { Playfair_Display } from "@next/font/google";
+import { PT_Serif } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Filter from "../components/filter";
 import Icons from "../components/icons";
 
-export const playfairDisplay = Playfair_Display({
+export const ptSerif = PT_Serif({
   weight: "400",
   subsets: ["latin"],
 });
@@ -21,7 +21,7 @@ type Props = {
 
 export default function Index({ allPosts }: Props) {
   return (
-    <div className={playfairDisplay.className}>
+    <div className={ptSerif.className}>
       <Layout>
         <Head>
           <title>{`jens.bechsor.no`}</title>
