@@ -5,7 +5,7 @@ genre: 'Prose'
 coverImage: '/assets/blog/paper.jpg'
 date: '2023-02-10T17:14:07.322Z'
 ogImage:
-  url: '/assets/blog/believe/cover.jpg'
+  url: '/assets/blog/phone.jpg'
 ---
 
 I don’t like [surveillance capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism), so I decided to do something about my place in it. Even when I have nothing to hide, I don’t want to be watched. It’s just creepy.
