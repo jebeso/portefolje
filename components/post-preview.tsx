@@ -23,7 +23,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
         >
           {title}
         </Link>
-        <div className="text-lg text-slate-600">
+        <div className="text-lg text-slate-400">
         <span>
           <DateFormatter dateString={date} />
         </span>

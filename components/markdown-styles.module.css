@@ -6,7 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-0;
 
 }
 
@@ -32,12 +32,19 @@
   word-wrap: break-word;
 }
 
+.markdown h1 {
+  @apply text-3xl mt-12 mb-2 leading-snug;
+  color: #6d28d9;
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-2xl mt-12 mb-4 leading-snug;
+  color: #6d28d9;
+  font-weight: bold;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-6 leading-snug;
 }
 
 .markdown a {
