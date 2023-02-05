@@ -10,7 +10,7 @@ ogImage:
 
 I don’t like [surveillance capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism), so I decided to do something about my place in it. Even when I have nothing to hide, I don’t want to be watched. It’s just creepy.
 
-The goal was to reduce *what kind* and *how much* data data i give away, from both security and privacy standpoints. Preferably without sounding too *whack* to people around me.
+The goal was to reduce *the kind of* and *how much* data data i give away, from both security and privacy standpoints. Preferably without sounding too *whack* to people around me.
 
 Now I feel in control, although I’m sure *actual* security people could easily poke holes in my setups. And, since I want stay a *human man with friends and a career*, I still have social media accounts. Tank wouldn’t want to plug me out of the Matrix just yet, but I wonder if  “going dark since 2022” will make me look *more* or *less* suspicious to our Future Corporate Overlords
 
