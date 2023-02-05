@@ -6,4 +6,3 @@ const ptSerif = PT_Serif({
   weight: '400',
   subsets: ['latin'],
 })
-}
