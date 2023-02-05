@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+
+html {
+    background-color: white;
+    overflow: auto;
+}
+
+@media screen and (min-width: 960px) {
+  html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+  }
+}

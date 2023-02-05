@@ -6,13 +6,49 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-0;
+
+}
+
+.markdown img {
+  border-radius: 7px;
+}
+
+.markdown code {
+  display: inline-block;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid rgb(139 92 246);;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+.markdown h1 {
+  @apply text-3xl mt-12 mb-2 leading-snug;
+  color: #6d28d9;
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-2xl mt-12 mb-4 leading-snug;
+  color: #6d28d9;
+  font-weight: bold;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-6 leading-snug;
+}
+
+.markdown a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(59 130 246);
 }
