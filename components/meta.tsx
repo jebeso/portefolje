@@ -33,7 +33,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Jens' website and blog`}
+        content={`This is where Jens Bech-Sørensen writes stuff`}
       />
     </Head>
   )
