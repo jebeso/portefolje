@@ -5,7 +5,7 @@ genre: 'Prose'
 coverImage: '/assets/blog/paper.jpg'
 date: '2016-01-29T17:14:07.322Z'
 ogImage:
-  url: '/assets/blog/believe/cover.jpg'
+  url: '/assets/blog/paper.jpg'
 ---
 
 _This post is just the publication, which you [can find here](https://link.springer.com/article/10.1007/s40806-016-0048-6)._
