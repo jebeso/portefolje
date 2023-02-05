@@ -1,7 +1,7 @@
 ---
 title: 'Owning my data'
 excerpt: "I don’t like surveillance capitalism, so I decided to do something about my place in it. Even when I have nothing to hide, I don’t want to be watched. It’s just creepy!"
-genre: 'Prose'
+genre: 'Tech'
 coverImage: '/assets/blog/phone.jpg'
 date: '2023-02-10T17:14:07.322Z'
 ogImage:
