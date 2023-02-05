@@ -8,7 +8,6 @@ import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
@@ -46,7 +45,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               <article className="mb-32 xl:px-40">
                 <Head>
                   <title>
-                    {post.title} | jens.bechsor.no {CMS_NAME}
+                    {post.title} | jens.bechsor.no
                   </title>
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>

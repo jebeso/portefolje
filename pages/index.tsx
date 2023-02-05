@@ -7,7 +7,6 @@ import Head from "next/head";
 import Post from "../interfaces/post";
 import { PT_Serif } from "@next/font/google";
 import TopBar from "../components/topbar";
-import Filter from "../components/filter";
 import Icons from "../components/icons";
 
 export const ptSerif = PT_Serif({
@@ -30,7 +29,6 @@ export default function Index({ allPosts }: Props) {
           <TopBar />
           <Intro />
           <Icons />
-          <Filter />
           {<Stories posts={allPosts} />}
         </Container>
       </Layout>
