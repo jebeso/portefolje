@@ -1,6 +1,6 @@
 ---
-title: 'Psychology publication'
-excerpt: "As a part of my master's degree in Social Psychology at Vrije Universiteit Amsterdam, I conducted and published a replication study. I quite enjoyed the publication process, though I never became a huge fan of the subject matter. The paper been cited more than 40 times, however, so I guess you could say my academic career was short and impactful?!"
+title: 'Publication'
+excerpt: "I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful?"
 genre: 'Prose'
 coverImage: '/assets/blog/paper.jpg'
 date: '2016-01-29T17:14:07.322Z'
@@ -8,7 +8,7 @@ ogImage:
   url: '/assets/blog/paper.jpg'
 ---
 
-_This post is just the publication, which you [can find here](https://link.springer.com/article/10.1007/s40806-016-0048-6)._
+Publication [here](https://link.springer.com/article/10.1007/s40806-016-0048-6)._
 ## Abstract
 
 Evolutionary psychologists have argued for evolved sex differences in human mate preferences (e.g., (Buss and Barnes _Journal of Personality and Social Psychology 50_,559–570, 1986; Buss _American Scientist 73_,47–51, 1985, _Behavioral and Brain Sciences 12_, 1–49, 1989, 1994). Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner (e.g., Miller 2000; Buss and Schmitt _Psychological Review 100_, 204–232, 1993; Fisman et al. 2006; Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994). In this short report, we replicated a seminal study that investigated preferences for potential marriage partners (Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994) to assess if sex differences in mate preferences may have converged over time due to social change via a crowd-sourced sample (_n_ = 522). The replication was largely successful and, thus, suggests stable sex differences in long-term mate preferences in line with an evolutionary framework. However, we also found evidence for narrowed sex differences for preferences with regard to ethnicity and education. Interestingly, while the original study found no sex difference in the preference for marrying the previously married, the current study showed that women were slightly more inclined than men to prefer a previously married partner. Therefore, these findings also suggest that social change and societal norms could make long-term mate preferences flexible and influence how they develop over time.

@@ -2,7 +2,6 @@ import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
-import BiCode from "react-icons"
 
 export type Props = {
   posts: Post[];
@@ -17,10 +16,6 @@ export enum Genre {
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-setSelectedGenre
-  const handleGenreFilter = (genre: Genre) => {
-    (genre);
-  };
 
   const handleSearchTerm = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -46,7 +41,7 @@ setSelectedGenre
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + " mr-0 w-44";
+  const searchStyling = buttonStyling + "mr-0 w-44";
 
   return (
     <section>
@@ -57,21 +52,23 @@ setSelectedGenre
           type="text"
           value={searchTerm}
           onChange={handleSearchTerm}
-          placeholder="Search keywords..."
+          placeholder="Search..."
         />{" "}
         <button
           className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-100" : ""
+            selectedGenre === null ? "bg-violet-100 underline" : ""
           }`}
           onClick={() => setSelectedGenre(null)}
         >
-          💜 Any subject
+          Any subject
         </button>
         {Object.values(Genre).map((genre?) => (
           <button
             key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-100 text-violet-900" : ""
+              selectedGenre === genre
+                ? "bg-violet-100 text-violet-900 underline"
+                : ""
             }`}
             onClick={() => {
               if (selectedGenre === genre) {
@@ -99,8 +96,8 @@ setSelectedGenre
           />
         ))}
         {filteredPosts.length === 0 && (
-          <div className="text-3xl pt-1 text-violet-800 text-center select-none">
-            No results for that selection...
+          <div className="text-3xl pt-1 text-violet-800 select-none">
+            No results for your selection
           </div>
         )}
       </div>

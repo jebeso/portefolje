@@ -1,5 +1,4 @@
 import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
 import Link from "next/link";
 
 type Props = {
@@ -11,10 +10,10 @@ type Props = {
   genre: string;
 };
 
-const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
+const PostPreview = ({ title, date, excerpt, slug }: Props) => {
   return (
     <div className="border-b border-violet-300">
-            <h3 className="text-3xl leading-snug pb-2">
+      <h3 className="text-3xl leading-snug pb-2">
         <Link
           as={`/posts/${slug}`}
           href="/posts/[slug]"
@@ -23,16 +22,11 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
           {title}
         </Link>
         <div className="text-lg text-slate-400">
-        <span>
-          <DateFormatter dateString={date} />
-        </span>
-      </div>
+          <span>
+            <DateFormatter dateString={date} />
+          </span>
+        </div>
       </h3>
-      <div className="mb-1">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-
-
 
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>

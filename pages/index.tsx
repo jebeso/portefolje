@@ -13,7 +13,6 @@ export const ptSerif = PT_Serif({
   weight: "400",
   subsets: ["latin"],
 });
-
 type Props = {
   allPosts: Post[];
 };

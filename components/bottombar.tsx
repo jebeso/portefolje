@@ -18,7 +18,6 @@ const BottomBar = (props) => {
           >
             To the top! 👏
           </button>
-          <div className="pt-1 bg-violet-500 bottom-0 rounded-t-md"></div>
         </div>
       ) : (
         <></>

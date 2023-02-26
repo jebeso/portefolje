@@ -1,8 +1,9 @@
 import { AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi"
+import { FiGithub } from "react-icons/fi";
 
 const size = 25;
-const hoverCSS = "transition-colors duration-200 hover:scale-125 transition duration-200 ease-in-out text-violet-500";
+const hoverCSS =
+  "transition-colors duration-200 hover:scale-125 transition duration-150 ease-in-out text-violet-500";
 
 const Icons = () => {
   return (
