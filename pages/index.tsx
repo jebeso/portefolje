@@ -22,7 +22,7 @@ export default function Index({ allPosts }: Props) {
   return (
     <div className={ptSerif.className}>
       <Layout>
-        <Head>
+        {/* <Head>
           <title>{`jens.bechsor.no`}</title>
         </Head>
         <Container>
@@ -30,7 +30,7 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           <Icons />
           {<Stories posts={allPosts} />}
-        </Container>
+        </Container> */}
       </Layout>
     </div>
   );
