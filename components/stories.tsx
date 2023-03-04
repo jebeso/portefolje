@@ -85,7 +85,7 @@ const Stories = ({ posts }: Props) => {
         </div>
       </div>
       <div className="mb-14"></div>
-      <TransitionGroup className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16">
+      <TransitionGroup className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-30 gap-y-20 md:gap-y-16 xl:gap-x-56">
         {filteredPosts.map((post) => (
           <CSSTransition key={post.slug} classNames="post" timeout={100}>
             <PostPreview

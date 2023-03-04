@@ -2,7 +2,9 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
+.markdown p {
+  margin-bottom: 1em;
+}
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
@@ -49,6 +51,6 @@
 
 .markdown a {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: normal;
   color: rgb(59 130 246);
 }

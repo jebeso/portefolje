@@ -17,7 +17,7 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
         <Link
           as={`/posts/${slug}`}
           href="/posts/[slug]"
-          className="hover:text-violet-700 transition duration-200 underline"
+          className="hover:text-violet-700 transition duration-200"
         >
           {title}
         </Link>
@@ -27,7 +27,16 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
           </span>
         </div>
       </h3>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-lg leading-relaxed mb-4">
+        {excerpt}{" "}
+        <Link
+          as={`/posts/${slug}`}
+          href="/posts/[slug]"
+          className="underline text-violet-700"
+        >
+          More...
+        </Link>
+      </p>
     </div>
   );
 };
