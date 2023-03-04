@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-.playfair {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-  }
-
 html {
     background-color: white;
     overflow: auto;
@@ -18,4 +13,26 @@ html {
       margin-left: calc(100vw - 100%);
       margin-right: 0;
   }
+}
+
+.post-enter {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.post-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-out, transform 100ms ease-out;
+}
+
+.post-exit {
+  opacity: 1;
+  transform: translateY(100);
+}
+
+.post-exit-active {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 100ms ease-in, transform 200ms ease-in;
 }

@@ -10,7 +10,7 @@ import TopBar from "../components/topbar";
 import Icons from "../components/icons";
 
 export const ptSerif = Roboto({
-  weight: "400",
+  weight: "300",
   subsets: ["latin"],
 });
 type Props = {

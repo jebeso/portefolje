@@ -2,6 +2,7 @@ import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 export type Props = {
   posts: Post[];
@@ -41,66 +42,64 @@ const Stories = ({ posts }: Props) => {
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + "mr-0 w-44";
-
+  const searchStyling = buttonStyling + "mr-0 w-44 outline-none";
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
-      <div className="mb-8 text-center sm:text-left">
-        <input
-          className={searchStyling}
-          type="text"
-          value={searchTerm}
-          onChange={handleSearchTerm}
-          placeholder="Search..."
-        />{" "}
-        <button
-          className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-100 underline" : ""
-          }`}
-          onClick={() => setSelectedGenre(null)}
-        >
-          Any subject
-        </button>
-        {Object.values(Genre).map((genre?) => (
+      <div className="mb-8 text-center sm:text-left flex flex-col">
+        <div>
           <button
-            key={genre}
             className={`${buttonStyling} ${
-              selectedGenre === genre
-                ? "bg-violet-100 text-violet-900 underline"
-                : ""
+              selectedGenre === null ? "bg-violet-200" : ""
             }`}
-            onClick={() => {
-              if (selectedGenre === genre) {
-                setSelectedGenre(null);
-              } else {
-                setSelectedGenre(genre);
-              }
-            }}
+            onClick={() => setSelectedGenre(null)}
           >
-            {genre}
+            Any
           </button>
-        ))}
+          {Object.values(Genre).map((genre?) => (
+            <button
+              key={genre}
+              className={`${buttonStyling} ${
+                selectedGenre === genre ? "bg-violet-200" : ""
+              }`}
+              onClick={() => {
+                if (selectedGenre === genre) {
+                  setSelectedGenre(null);
+                } else {
+                  setSelectedGenre(genre);
+                }
+              }}
+            >
+              {genre}
+            </button>
+          ))}
+        </div>
+        <div>
+          <input
+            className={searchStyling}
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchTerm}
+            placeholder="Search..."
+          />
+        </div>
       </div>
       <div className="mb-14"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16">
+      <TransitionGroup className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16">
         {filteredPosts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-            genre={post.genre}
-          />
+          <CSSTransition key={post.slug} classNames="post" timeout={100}>
+            <PostPreview
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              slug={post.slug}
+              excerpt={post.excerpt}
+              genre={post.genre}
+            />
+          </CSSTransition>
         ))}
-        {filteredPosts.length === 0 && (
-          <div className="text-3xl pt-1 text-violet-800 select-none">
-            No results for your selection
-          </div>
-        )}
-      </div>
+      </TransitionGroup>
+
       <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
     </section>
   );

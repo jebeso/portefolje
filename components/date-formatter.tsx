@@ -5,7 +5,9 @@ type Props = {
 };
 
 const DateFormatter = ({ dateString }: Props) => {
-  return <>Written {moment(dateString).fromNow()}</>;
+  return (
+    <div className="select-none">Written {moment(dateString).fromNow()}</div>
+  );
 };
 
 export default DateFormatter;
