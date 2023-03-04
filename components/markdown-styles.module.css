@@ -54,3 +54,7 @@
   font-weight: normal;
   color: rgb(59 130 246);
 }
+
+.markdown strong {
+  font-weight: bold;
+}

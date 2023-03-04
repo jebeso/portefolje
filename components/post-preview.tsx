@@ -34,6 +34,7 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
           href="/posts/[slug]"
           className="underline text-violet-700"
         >
+          {" "}
           More...
         </Link>
       </p>

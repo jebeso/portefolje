@@ -11,7 +11,6 @@ import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
-import BottomBar from "../../components/bottombar";
 import { ptSerif } from "..";
 
 type Props = {
