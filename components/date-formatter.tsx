@@ -5,7 +5,7 @@ type Props = {
 };
 
 const DateFormatter = ({ dateString }: Props) => {
-  return <>Posted {moment(dateString).fromNow()}</>;
+  return <>Written {moment(dateString).fromNow()}</>;
 };
 
 export default DateFormatter;

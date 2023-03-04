@@ -5,11 +5,11 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
-import { PT_Serif } from "@next/font/google";
+import { Roboto } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Icons from "../components/icons";
 
-export const ptSerif = PT_Serif({
+export const ptSerif = Roboto({
   weight: "400",
   subsets: ["latin"],
 });

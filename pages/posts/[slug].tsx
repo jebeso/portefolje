@@ -44,9 +44,7 @@ export default function Post({ post, morePosts, preview }: Props) {
             <>
               <article className="mb-32 xl:px-40">
                 <Head>
-                  <title>
-                    {post.title} | jens.bechsor.no
-                  </title>
+                  <title>{post.title} | jens.bechsor.no</title>
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>
                 <PostHeader
@@ -57,14 +55,14 @@ export default function Post({ post, morePosts, preview }: Props) {
                 <PostBody content={post.content} />
               </article>
               <div className="pt-10 text-center">
-          <button
-            className="pb-12 mx-auto text-3xl mb-16 text-violet-700"
-            onClick={handleClick}
-          >
-            To the top! 👏
-          </button>
-          <div className="pt-1 bg-violet-500 bottom-0 rounded-t-md"></div>
-        </div>
+                <button
+                  className="pb-12 mx-auto text-3xl mb-16 text-violet-700"
+                  onClick={handleClick}
+                >
+                  To the top! 👏
+                </button>
+                <div className="pt-1 bg-violet-500 bottom-0 rounded-t-md"></div>
+              </div>
             </>
           )}
         </Container>

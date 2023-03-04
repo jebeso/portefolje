@@ -8,7 +8,7 @@ export type Props = {
 };
 
 export enum Genre {
-  Tech = "Tech",
+  IT = "IT",
   Prose = "Prose",
   Fiction = "Fiction",
 }
@@ -82,8 +82,8 @@ const Stories = ({ posts }: Props) => {
           </button>
         ))}
       </div>
-      <div className="mb-8"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16 mb-20">
+      <div className="mb-14"></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16">
         {filteredPosts.map((post) => (
           <PostPreview
             key={post.slug}
