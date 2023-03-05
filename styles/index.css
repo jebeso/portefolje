@@ -17,7 +17,7 @@ html {
 
 .post-enter {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(0px);
 }
 
 .post-enter-active {
@@ -28,11 +28,11 @@ html {
 
 .post-exit {
   opacity: 1;
-  transform: translateY(100);
+  transform: translateY(0px);
 }
 
 .post-exit-active {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(0px);
   transition: opacity 100ms ease-in, transform 200ms ease-in;
 }
