@@ -1,6 +1,6 @@
 ---
 title: 'Owning my data'
-excerpt: "I took some really convoluted steps to ensure ownership of my data and minimize my dependence on Google services."
+excerpt: "I found out my Google Location History was a 780 megabyte text file! That's when I decided to better protect my data ownership. The aim was to limit the amount and type of data I share, for both security and privacy reasons, while avoiding becoming a crazy person. Now I feel in control, although I'm certain actual security people could poke holes in my setup all day."
 genre: 'Tech'
 coverImage: '/assets/blog/phone.jpg'
 date: '2023-02-10T17:14:07.322Z'
