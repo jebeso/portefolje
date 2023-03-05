@@ -52,10 +52,12 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
           <Link
             as={`/posts/${slug}`}
             href="/posts/[slug]"
-            className="underline text-violet-700"
+            className="underline text-violet-600"
           >
             <br />
-            <span className="whitespace-nowrap">Read more...</span>
+            <span className="whitespace-nowrap hover:text-violet-800">
+              Read more...
+            </span>
           </Link>
         </p>
       </div>

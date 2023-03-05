@@ -1,5 +1,5 @@
 ---
-title: 'I wrote this website'
+title: 'I coded this website'
 excerpt: "For some reason I always wanted a blog and a place to put and share things I write. So now that I've learned a fair amount of front end development, I just did it. Maybe it can act as a portfolio and in addition to LinkedIn for various things I do."
 genre: 'IT'
 date: '2023-03-04T17:14:07.322Z'

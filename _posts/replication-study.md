@@ -1,6 +1,220 @@
 ---
 title: 'Publication'
-excerpt: "I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful? Evolutionary psychologists have argued for evolved sex differences in human mate preferences. Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner (e.g., Miller 2000; Buss and Schmitt _Psychological Review 100_, 204–232, 1993; Fisman et al. 2006; Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994). "
+excerpt: "I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful? Evolutionary psychologists have argued for evolved sex differences in human mate preferences. Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner (e.g., Miller 2000; Buss and Schmitt Psychological Review 100, 204–232, 1993; Fisman et al. 2006; Sprecher et al. Journal of Personality and Social Psychology 66, 1074–1080, 1994). In this short report, we replicated a seminal study that investigated preferences for potential marriage partners (Sprecher et al. Journal of Personality and Social Psychology 66, 1074–1080, 1994) to assess if sex differences in mate preferences may have converged over time due to social change via a crowd-sourced sample (n = 522). The replication was largely successful and, thus, suggests stable sex differences in long-term mate preferences in line with an evolutionary framework. However, we also found evidence for narrowed sex differences for preferences with regard to ethnicity and education. Interestingly, while the original study found no sex difference in the preference for marrying the previously married, the current study showed that women were slightly more inclined than men to prefer a previously married partner. Therefore, these findings also suggest that social change and societal norms could make long-term mate preferences flexible and influence how they develop over time.
+
+In the late 1980s and early 1990s, evolutionary psychologists, most notably David Buss (e.g., Buss and Barnes 1986; Buss 1985, 1989, 1994), intensively studied sex differences in mate preferences. This laid the foundation of a large research field focusing on mate preferences and attractiveness, which up until today is considered a crucial part of evolutionary psychology (Webster et al. 2009; Webster 2007). Evolutionary psychologists have argued that when looking for a long-term partner, men will value physical attractiveness, and cues to fertility (e.g., Buss 1989; Miller 2000). Women, on the other hand, should value social stability and economic security above traits relating to fertility and physical appearance for long-term relationships, in comparison to men (e.g., Buss and Schmitt 1993; Fisman et al. 2006; Sprecher et al. 1994). The purpose of our paper is not to review the extant literature on mate preferences and sexual selection (see e.g., Buss 1994; Ellis 1992; Low 2000; Miller 1998, 2000; Shackelford et al. 2005; Stewart-Williams and Thomas 2013 for reviews), but rather to revisit a seminal study. Next to initial studies by evolutionary psychologists based largely on student samples (e.g., Buss and Barnes 1986: study 2.), a study by Sprecher et al. (Sprecher et al. 1994) published in Journal of Personality and Social Psychology formed an important contribution to the development of research on sex differences in mate preferences.Footnote 1
+
+In this brief report, we present a replication of Sprecher et al.’s (1994) study on human long-term mate preferences from a large sample. This study is an important contribution as it relied on a large, nationally representative sample (National Survey of Families and Households). Sprecher and colleagues assessed long-term preferences on 12 traits and found significant sex differences for all of the traits they examined with the exception of previous marriage and different religion. The goal of the present study is to examine if these findings are replicable with a different sample, two decades later.
+
+Previous research suggests that the sex differences in mate preferences might be becoming smaller as a consequence of increased gender equality (e.g., Kasser and Sharma 1999; Moore and Cassidy 2007; Zentner and Mitura 2012). For example, Buss et al. (2001) found that men and women’s preferences converged from 1939 to 1996 towards similar preferences for physical attractiveness, financial prospects, and mutual attraction. Given these findings, we expect further convergence in reported sex differences for long-term partners today compared to 20 years ago.
+The Present Study
+
+We attempt to replicate the core findings of a study, which found support for sex differences in long-term mate preferences (Sprecher et al. 1994). Our study investigates willingness to marry depending on physical appearance, age, earning potential, previous marriage, religion, already having children, and ethnicity.
+
+Using the same measures as Sprecher et al. (1994), we expect to find sex differences in long-term mate preferences, primarily for physical appearance, age, and earning potential, but that these differences are smaller than 20 years ago. We also expect a narrowing of the observed sex difference in other preferences related to ethnicity, other religion, previous marriage, and already having children. Finally, we also investigate if sex differences exist in perceived importance of marriage in long-term relationships, something that was not assessed in the original study. The reason for including this measure is that the importance of marriage might have changed substantially over the past decades (e.g., Cherlin 2004), and this could account to some degree for why sex differences have narrowed.
+Method
+Participants
+
+Participants were recruited and participated online through a crowdsourcing site (CrowdFlower.com) in 2014. Out of the initial recruited sample (n = 857), several entries were excluded due to use of duplicate Internet Protocol addresses (47), uncompleted responses (7), participants below 18 years old (3), participants above 35 years old (46), currently or previously married (97), not being U.S. citizens (32), and not self-identifying as heterosexual (103). These exclusion criteria corresponded largely to those by Sprecher et al. (1994) and led to a final sample of n = 522. The sample thus consisted of previously (and currently) unmarried heterosexual (259 males; M age  = 27.33, SD = 4.78) U.S. citizens that were single (73.9 %) or in a relationship. About half (49.2 %) had attended college. All U.S. states were represented with the majority residing in New York (n = 51), Florida (n = 46), California (n = 44), Texas (n = 34), and Pennsylvania (n = 32). The majority indicated that they were Caucasian (71.1 %).
+Materials and Procedure
+Procedure
+
+Participants signed an online informed consent form before answering some sociodemographic questions. They then indicated willingness to marry someone with certain characteristics on 12 questions before they were debriefed and provided a code for participation payment ($0.50) at the end of the study. This study received ethical approval from the ethics committee at the university where it was conducted.
+Demographic Questions
+
+Participants answered sociodemographic questions including sex, age, U.S. citizenship, U.S. state residency, relationship status, religious affiliation, ethnicity, education level, and sexual orientation (categorical).
+Mate Preferences Questionnaire
+
+Long-term mate preferences (Sprecher et al. 1994) were measured on a scale from 1 (not at all) to 7 (very willing). The questions included willing to marry someone “older by 5 or more years,” “younger by 5 or more years,” “had been married before,” “who already had children,” “was not likely to hold a steady job,” “was of a different religion,” “was of a different race,” “would earn much less than you,” “would earn much more than you,” “was not “good-looking,” “had more education than you,” and “had less education than you.” One additional question not measured by Sprecher et al. (1994) also assessed perceived importance of marriage in a long-term relationship on a scale from 1 (not at all important) to 7 (extremely important) (M = 5.25, SD = 1.53). On average, participants valued marriage as important (one sample t test: t(521) = 18.66, p = 0.001). All analyses were run in SPSS 20, and we adopted the same analytical strategy as Sprecher et al. (1994): a series of analyses of variance (ANOVAs). For “importance of marriage,” we also performed an ANOVA.
+Results
+Sex Differences in Mate Preferences
+
+Table 1 shows the full results and comparison to Sprecher et al.’s (1994) original study (Fig. 1). Analysis of variance with independent variable sex and the 12 traits for mate preferences as independent variables revealed statistically significant sex differences for the majority of traits. Women reported being more willing than men to marry someone older by five or more years (F = 43.95, p = 0.001, d = 0.58), who already had children (F (1, 520) = 19.64, p = 0.001, d = 0.40), who would earn much more than themselves (F = 22.20, p = 0.001, d = 0.40), who was not “good-looking” (F (1,520) = 24.59, p = 0.001, d = 0.43), who had been married before (F (1,520) = 5.85, p < 0.05, d = 0.22), and who had more education (F (1,520) = 11.79, p = 0.001, d = 0.30). Men reported being more willing than women to marry someone younger by five or more years (F = 51.56, p = 0.001, d = 0.65), not likely to hold a steady job (F (1,520) = 42.43, p = 0.001, d = 0.57), and who would earn much less (F = 7.46, p = 0.01, d = 0.24). No statistically significant sex differences were observed in preferences for a different religion, different race, and someone with less education (all p values >0.22). These results thus largely correspond to the results of Sprecher et al. (1994) except for “having been married before,” “was of a different race,” and “had less education than you.” An analysis of variance also revealed a sex difference (men; M = 5.02, SD = 1.58, women; M = 5.47, SD = 1.44) for perceived importance of marriage for a long-term relationship (F (1,520) = 11.27, p = 0.01, d = 0.29), with women valuing marriage more than men did. This variable, the perception of importance, also moderated the sex difference on the willingness to marry someone older by five or more years (B = −0.24, p = 0.01, η p 2 = 0.01). For women, importance of marriage was positively related to a greater willingness to marry a man who was older by five years or more (F (1,260) = 12.23, p = 0.001, η 2 = 0.045), whereas for men, importance of marriage was not significantly related to a greater willingness to marry someone who was five years or older (F (1,257) = 0.24, p = 0.62). Importance of marriage did not significantly moderate any of the other reported sex differences (all of the p values >0.09).
+
+Table 1 Results and comparison to Sprecher et al. (1994) original study
+
+Full size table
+
+Fig. 1
+
+figure 1
+
+Comparison of results. The effect sizes from Sprecher’s original study (1994) (open circles) and our replication (dark circles) with 95 % CI. The numbers correspond to the twelve traits studied from Table 1. A positive Cohen’s D score indicates that women value this trait more than men do, while a negative Cohen’s D score indicates that men value this trait more than women do
+
+Full size image
+Discussion
+
+Our results largely replicated the findings by Sprecher et al. (1994) showing that in 9 out of 12 tests, the direction of the effect was the same. On average, women were more likely than men to indicate a preference for marrying someone older. Women also emphasized physical attractiveness less than men did, but valued a high earning potential more so than men did. Men on the other hand were more willing to marry someone younger, unlikely to hold a steady job, and with low earning potential than women did. However, there were some notable contrasts with the original study. For example, the overall magnitude of the sex differences seems smaller in our data than in Sprecher et al.’s (in 9 out of 12 tests, the absolute effect size was stronger in the original study). Sex differences in willingness to marry someone of different race or with less education had narrowed as predicted. However, unlike the 1994 study and against our second hypothesis, we observed a significant sex difference for willingness to marry the previously married, with women indicating a higher willingness to marry someone who had been married before. No other mate preferences displayed a narrowing between the sexes. Finally, our additional question also indicated that in our sample, women found marriage more important in long-term relationships than men did. This variable also moderated the willingness to marry someone older by five or more years, reducing the observed gender difference in willingness to marry someone older by five or more years. Our data suggest that when women indicated that marriage was important to them, they tended to be more willing to marry somebody who was older by 5 years or more. In contrast, for men, the importance of marriage was not significantly related to the willingness to marry someone who was 5 or more years older than themselves. We did not further explore individual differences and preferences, but for further research, it would be interesting to examine the degree to which attitudes towards marriage influence preferences.
+
+By and large, our results are thus consistent with the proposed evolved mate preferences as argued for by evolutionary psychologists (e.g., Buss and Schmitt 1993; Buss 1994; Ellis 1992; Miller 2000). At the same time, shifting sociocultural changes (e.g., norms) are also important to our findings. For example, our data show no significant sex difference in the reported willingness to marry someone of a different ethnicity, contrary to the original findings by Sprecher and colleagues (Sprecher et al. 1994). This could be explained by broader social changes in stereotypes, such as interethnic marriages becoming more common in recent years (Qian 2005). Similarly, the absence of a significant sex difference in preferences for marrying someone with less education could potentially be explained by increased education levels across the whole U.S. population and that women are increasingly pursuing higher education (Taylor et al. 2011), thus making it more acceptable and unimportant whether one marries “above or below” a certain education level. At the same time, the finding that women were more willing than men to marry someone with more education suggests that especially highly educated women might find it difficult to find a partner on the marriage market (e.g., Kashyap et al. 2015). Further, longitudinal analyses are if necessary to investigate the effect of a “marriage squeeze” for education would influence women’s mate preferences and outcomes on the marriage market. As our data are cross-sectional and deal with preferences, we can only speculate the degree to which preferences for educational attainment will affect actual choice on the marriage market.
+
+Finally, the finding that women were more willing to marry someone previously married is in line with research suggesting that marriage has become less important for young adults’ transition into adulthood (Kefalas et al. 2011) and that, through deinstitutionalization of marriage (Cherlin 2004), marriage has become less formal and less tied to one’s social reputation and success. Moreover, due to a rise in divorce rates, there is now an increased availability of the previously married on the marriage market (Goldscheider et al. 2009). This implies that being previously married might carry much less weight today as a potential cue to mate value, compared to what it did in the past. Being previously married could potentially function as a cue to “good mate value,” in much the same way as the purported wedding ring effect (e.g., Waynforth 2007). That being said, the meaning of marriage, and the potential stigma associated with divorce, likely differs between now and 20 years ago and it is possible that individuals are simply more indifferent to (previous) marriage.
+Limitations
+
+Unlike the original study, designed to be nationally representative, we relied on an online opportunity sample via CrowdFlower. It has been argued that such online studies capture to a large degree similar results as those in a psychology laboratory (Buhrmester et al. 2011; Stewart et al. 2015). Nonetheless, our sample is not representative of the U.S. population, and we should therefore be careful with generalizing our findings; for example, as money is a key incentive for online workers, we might have selected individuals who strongly differ from the general U.S. population. More broadly, we should also stress that the data we presented here are from a very particular sample and it is unclear whether any results would generalize to other Western societies or more broadly can be taken as being indicative of universal mate preferences (Henrich et al. 2010). However, we believe these data are apt for attempting to replicate the original Sprecher et al. (1994) study, with the additional caveat that questions about marriage might be very differently approached now than 20 years ago.
+Implications and Future Research
+
+Our findings are in line with the argument that evolved mate preferences exist, while also highlighting that these preferences are likely malleable to socioeconomic temporal trends (e.g., Boxer et al. 2013; Buss et al. 2001; Sweeney and Cancian 2004; Sweeney 2002). Future research could investigate this phenomenon in other cultures, countries, and other ages. Ideally, in order to study long-term changes in mate preferences, we would rely on longitudinal, nationally representative samples. Nonetheless, cross-sectional studies and replications of psychological research (e.g., Amir and Sharon 1990; Ferguson and Heene 2012; Francis 2012; Makel et al. 2012) can be a useful and necessary first step in examining the robustness of documented sex differences in mate preferences and choice as argued for by evolutionary psychologists, well as examining whether the argued for sex differences have narrowed or not.
+Notes
+
+    Given the evolutionary framework we adopt in this paper, we will consistently refer to sex differences in these preferences rather than gender differences.
+
+References
+
+    Amir, Y., & Sharon, I. (1990). Replication research: a “must” for the scientific advancement of psychology. Journal of Social Behavior & Personality, 5(4), 51–59.
+
+    Google Scholar 
+
+    Boxer, C. F., Noonan, M. C., & Whelan, C. B. (2013). Measuring mate preferences: a replication and extension. Journal of Family Issues, 36(2), 163–187. doi:10.1177/0192513X13490404.
+
+    Article  Google Scholar 
+
+    Buhrmester, M., Kwang, T., & Gosling, S. D. (2011). Amazon’s mechanical Turk a new source of inexpensive, yet high-quality, data? Perspectives on Psychological Science, 6(1), 3–5. doi:10.1177/1745691610393980.
+
+    Article  PubMed  Google Scholar 
+
+    Buss, D. M. (1985). Human mate selection. American Scientist, 73(1), 47–51.
+
+    Google Scholar 
+
+    Buss, D. M. (1989). Sex differences in human mate preferences: evolutionary hypotheses tested in 37 cultures. Behavioral and Brain Sciences, 12(1), 1–49. doi:10.1017/S0140525X00023992.
+
+    Article  Google Scholar 
+
+    Buss, D. M. (1994). The evolution of desire: strategies of human mating. New York: Basic books.
+
+    Google Scholar 
+
+    Buss, D. M., & Barnes, M. (1986). Preferences in human mate selection. Journal of Personality and Social Psychology, 50(3), 559–570. doi:10.1037/0022-3514.50.3.559.
+
+    Article  Google Scholar 
+
+    Buss, D. M., & Schmitt, D. P. (1993). Sexual strategies theory: an evolutionary perspective on human mating. Psychological Review, 100(2), 204–232. doi:10.1037/0033-295X.100.2.204.
+
+    Article  PubMed  Google Scholar 
+
+    Buss, D. M., Shackelford, T. K., Kirkpatrick, L. A., & Larsen, R. J. (2001). A half century of mate preferences: the cultural evolution of values. Journal of Marriage and Family, 63(2), 491–503. doi:10.1111/j.1741-3737.2001.00491.x.
+
+    Article  Google Scholar 
+
+    Cherlin, A. J. (2004). The deinstitutionalization of American marriage. Journal of Marriage and Family, 66(4), 848–861. doi:10.1111/j.0022-2445.2004.00058.x.
+
+    Article  Google Scholar 
+
+    Ellis, B. J. (1992). The evolution of sexual attraction: evaluative mechanisms in women. In J. Barkow, L. Cosmides, & J. Tooby (Eds.), The adapted mind (pp. 267–288). New York: Oxford University Press.
+
+    Google Scholar 
+
+    Ferguson, C. J., & Heene, M. (2012). A vast graveyard of undead theories: publication bias and psychological science’s aversion to the null. Perspectives on Psychological Science, 7(6), 555–561. doi:10.1177/1745691612459059.
+
+    Article  PubMed  Google Scholar 
+
+    Fisman, R., Iyengar, S. S., Kamenica, E., & Simonson, I. (2006). Gender differences in mate selection: evidence from a speed dating experiment. The Quarterly Journal of Economics, 121(2), 673-697. doi:10.1162/qjec.2006.121.2.673.
+
+    Francis, G. (2012). The psychology of replication and replication in psychology. Perspectives on Psychological Science, 7(6), 585–594. doi:10.1177/1745691612459520.
+
+    Article  PubMed  Google Scholar 
+
+    Goldscheider, F. K., Kaufman, G., & Sassler, S. (2009). Navigating the “new” marriage market: how attitudes toward partner characteristics shape union formation. Journal of Family Issues, 30, 719–737. doi:10.1177/0192513X09331570.
+
+    Article  Google Scholar 
+
+    Henrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world. Behavioral and Brain Sciences, 33(2–3), 61–83. doi:10.1017/S0140525X0999152X.
+
+    Article  PubMed  Google Scholar 
+
+    Kashyap, R., Esteve, A., & García-Román, J. (2015). Potential (mis)match? Marriage markets amidst sociodemographic change in India, 2005–2050. Demography, 52(1), 183–208. doi:10.1007/s13524-014-0366-x.
+
+    Article  PubMed  PubMed Central  Google Scholar 
+
+    Kasser, T., & Sharma, Y. S. (1999). Reproductive freedom, educational equality, and females’ preference for resource-acquisition characteristics in mates. Psychological Science, 10(4), 374–377. doi:10.1111/1467-9280.00171.
+
+    Article  Google Scholar 
+
+    Kefalas, M. J., Furstenberg, F. F., Carr, P. J., & Napolitano, L. (2011). “Marriage is more than being together”: the meaning of marriage for young adults. Journal of Family Issues, 32(7), 845–875. doi:10.1177/0192513X10397277.
+
+    Article  Google Scholar 
+
+    Low, B. S. (2000). Why sex matters. Princeton: Princeton University Press.
+
+    Google Scholar 
+
+    Makel, M. C., Plucker, J. A., & Hegarty, B. (2012). Replications in psychology research how often do they really occur? Perspectives on Psychological Science, 7(6), 537–542. doi:10.1177/1745691612460688.
+
+    Article  PubMed  Google Scholar 
+
+    Miller, G. F. (1998). How mate choice shaped human nature: a review of sexual selection and human evolution. In C. Crawford & D. L. Krebs (Eds.), Handbook of evolutionary psychology: ideas, issues, and applications (pp. 87–129). Mahwah: Lawrence Erlbaum Associates.
+
+    Google Scholar 
+
+    Miller, G. F. (2000). The mating mind: how sexual selection shaped the evolution of human nature. New York: Anchor books.
+
+    Google Scholar 
+
+    Moore, F. R., & Cassidy, C. (2007). Female status predicts female mate preferences across nonindustrial societies. Cross-Cultural Research, 41(1), 66–74. doi:10.1177/1069397106294860.
+
+    Article  Google Scholar 
+
+    Qian, Z. (2005). Breaking the last taboo: interracial marriage in America. Contexts. doi:10.1525/ctx.2005.4.4.33.
+
+    Google Scholar 
+
+    Shackelford, T. K., Schmitt, D. P., & Buss, D. M. (2005). Universal dimensions of human mate preferences. Personality and Individual Differences, 39(2), 447–458. doi:10.1016/j.paid.2005.01.023.
+
+    Article  Google Scholar 
+
+    Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:10.1037/0022-3514.66.6.1074.
+
+    Article  PubMed  Google Scholar 
+
+    Stewart, N., Ungemach, C., Harris, A. J., Bartels, D. M., Newell, B. R., Paolacci, G., & Chandler, J. (2015). The average laboratory samples a population of 7,300 Amazon Mechanical Turk workers. Judgment and Decision Making, 10(5), 479–491.
+
+    Google Scholar 
+
+    Stewart-Williams, S., & Thomas, A. G. (2013). The ape that thought it was a peacock: does evolutionary psychology exaggerate human sex differences? Psychological Inquiry, 24(3), 137–168. doi:10.1080/1047840X.2013.804899.
+
+    Article  Google Scholar 
+
+    Sweeney, M. M. (2002). Two decades of family change: the shifting economic foundations of marriage. American Sociological Review, 67(1), 132–147. doi:10.2307/3088937.
+
+    Article  Google Scholar 
+
+    Sweeney, M. M., & Cancian, M. (2004). The changing importance of white women’s economic prospects for assortative mating. Journal of Marriage and Family, 66(4), 1015–1028. doi:10.1111/j.0022-2445.2004.00073.x.
+
+    Article  Google Scholar 
+
+    Taylor, P., Parker, K., Fry, R, & Patten, E. (2011). Women see value and benefits of college; men lag on both fronts, survey finds. Pew Social and Demographic Trends. Retrieved from http://www.pewsocialtrends.org/files/2011/08/Gender-and-higher-ed-FNL-RPT.pdf
+
+    Waynforth, D. (2007). Mate choice copying in humans. Human Nature, 18(3), 264–271. doi:10.1007/s12110-007-9004-2.
+
+    Article  PubMed  Google Scholar 
+
+    Webster, G. D. (2007). Evolutionary theory’s increasing role in personality and social psychology. Evolutionary Psychology, 5(1), 84–91.
+
+    Article  Google Scholar 
+
+    Webster, G. D., Jonason, P. K., & Schember, T. O. (2009). Hot topics and popular papers in evolutionary psychology: analyses of title words and citation counts in evolution and human behavior, 1979–2008. Evolutionary Psychology, 7(3), 348–362.
+
+    Article  Google Scholar 
+
+    Zentner, M., & Mitura, K. (2012). Stepping out of the caveman’s shadow nations’ gender gap predicts degree of sex differentiation in mate preferences. Psychological Science, 23(10), 1176–1185. doi:10.1177/0956797612441004.
+
+    Article  PubMed  Google Scholar 
+
+Download references
+Author information
+Authors and Affiliations
+
+    Department of Experimental and Applied Psychology, Vrije Universiteit Amsterdam, Transitorium Building; room, 1B17, 1081BT, Amsterdam, The Netherlands
+
+    Jens Bech-Sørensen & Thomas V. Pollet
+
+Corresponding author
+
+Correspondence to Thomas V. Pollet.
+Rights and permissions
+
+Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made."
 genre: 'Prose'
 coverImage: '/assets/blog/paper.jpg'
 date: '2016-01-29T17:14:07.322Z'
@@ -10,7 +224,13 @@ ogImage:
 
 
 
-I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful? Evolutionary psychologists have argued for evolved sex differences in human mate preferences (e.g., (Buss and Barnes _Journal of Personality and Social Psychology 50_,559–570, 1986; Buss _American Scientist 73_,47–51, 1985, _Behavioral and Brain Sciences 12_, 1–49, 1989, 1994). Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner (e.g., Miller 2000; Buss and Schmitt _Psychological Review 100_, 204–232, 1993; Fisman et al. 2006; Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994). In this short report, we replicated a seminal study that investigated preferences for potential marriage partners (Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994) to assess if sex differences in mate preferences may have converged over time due to social change via a crowd-sourced sample (_n_ = 522). The replication was largely successful and, thus, suggests stable sex differences in long-term mate preferences in line with an evolutionary framework. However, we also found evidence for narrowed sex differences for preferences with regard to ethnicity and education. Interestingly, while the original study found no sex difference in the preference for marrying the previously married, the current study showed that women were slightly more inclined than men to prefer a previously married partner. Therefore, these findings also suggest that social change and societal norms could make long-term mate preferences flexible and influence how they develop over time.
+_I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful?_
+
+# Abstract
+
+Evolutionary psychologists have argued for evolved sex differences in human mate preferences (e.g., (Buss and Barnes _Journal of Personality and Social Psychology 50_,559–570, 1986; Buss _American Scientist 73_,47–51, 1985, _Behavioral and Brain Sciences 12_, 1–49, 1989, 1994). Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner (e.g., Miller 2000; Buss and Schmitt _Psychological Review 100_, 204–232, 1993; Fisman et al. 2006; Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994). In this short report, we replicated a seminal study that investigated preferences for potential marriage partners (Sprecher et al. _Journal of Personality and Social Psychology 66_, 1074–1080, 1994) to assess if sex differences in mate preferences may have converged over time due to social change via a crowd-sourced sample (_n_ = 522). The replication was largely successful and, thus, suggests stable sex differences in long-term mate preferences in line with an evolutionary framework. However, we also found evidence for narrowed sex differences for preferences with regard to ethnicity and education. Interestingly, while the original study found no sex difference in the preference for marrying the previously married, the current study showed that women were slightly more inclined than men to prefer a previously married partner. Therefore, these findings also suggest that social change and societal norms could make long-term mate preferences flexible and influence how they develop over time.
+
+# Introduction
 
 In the late 1980s and early 1990s, evolutionary psychologists, most notably David Buss (e.g., Buss and Barnes [1986](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR7 "Buss, D. M., & Barnes, M. (1986). Preferences in human mate selection. Journal of Personality and Social Psychology, 50(3), 559–570. doi:
 10.1037/0022-3514.50.3.559
@@ -48,7 +268,7 @@ Previous research suggests that the sex differences in mate preferences might be
 10.1111/j.1741-3737.2001.00491.x
 .")) found that men and women’s preferences converged from 1939 to 1996 towards similar preferences for physical attractiveness, financial prospects, and mutual attraction. Given these findings, we expect further convergence in reported sex differences for long-term partners today compared to 20 years ago.
 
-## The Present Study
+# The Present Study
 
 We attempt to replicate the core findings of a study, which found support for sex differences in long-term mate preferences (Sprecher et al. [1994](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR27 "Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:
 10.1037/0022-3514.66.6.1074
@@ -60,25 +280,25 @@ Using the same measures as Sprecher et al. ([1994](https://link.springer.com/art
 10.1111/j.0022-2445.2004.00058.x
 .")), and this could account to some degree for why sex differences have narrowed.
 
-## Method
+# Method
 
-### Participants
+## Participants
 
 Participants were recruited and participated online through a crowdsourcing site (CrowdFlower.com) in 2014. Out of the initial recruited sample (_n_ = 857), several entries were excluded due to use of duplicate Internet Protocol addresses (47), uncompleted responses (7), participants below 18 years old (3), participants above 35 years old (46), currently or previously married (97), not being U.S. citizens (32), and not self-identifying as heterosexual (103). These exclusion criteria corresponded largely to those by Sprecher et al. ([1994](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR27 "Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:
 10.1037/0022-3514.66.6.1074
 .")) and led to a final sample of _n_ = 522. The sample thus consisted of previously (and currently) unmarried heterosexual (259 males; _M_ _age_  = 27.33, SD = 4.78) U.S. citizens that were single (73.9 %) or in a relationship. About half (49.2 %) had attended college. All U.S. states were represented with the majority residing in New York (_n_ = 51), Florida (_n_ = 46), California (_n_ = 44), Texas (_n_ = 34), and Pennsylvania (_n_ = 32). The majority indicated that they were Caucasian (71.1 %).
 
-## Materials and Procedure
+# Materials and Procedure
 
-### Procedure
+## Procedure
 
 Participants signed an online informed consent form before answering some sociodemographic questions. They then indicated willingness to marry someone with certain characteristics on 12 questions before they were debriefed and provided a code for participation payment ($0.50) at the end of the study. This study received ethical approval from the ethics committee at the university where it was conducted.
 
-### Demographic Questions
+## Demographic Questions
 
 Participants answered sociodemographic questions including sex, age, U.S. citizenship, U.S. state residency, relationship status, religious affiliation, ethnicity, education level, and sexual orientation (categorical).
 
-### Mate Preferences Questionnaire
+## Mate Preferences Questionnaire
 
 Long-term mate preferences (Sprecher et al. [1994](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR27 "Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:
 10.1037/0022-3514.66.6.1074
@@ -88,9 +308,9 @@ Long-term mate preferences (Sprecher et al. [1994](https://link.springer.com/art
 10.1037/0022-3514.66.6.1074
 .")): a series of analyses of variance (ANOVAs). For “importance of marriage,” we also performed an ANOVA.
 
-## Results
+# Results
 
-### Sex Differences in Mate Preferences
+## Sex Differences in Mate Preferences
 
 Table [1](https://link.springer.com/article/10.1007/s40806-016-0048-6#Tab1) shows the full results and comparison to Sprecher et al.’s ([1994](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR27 "Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:
 10.1037/0022-3514.66.6.1074
@@ -114,7 +334,7 @@ Comparison of results. The effect sizes from Sprecher’s original study ([1994]
 
 [Full size image](https://link.springer.com/article/10.1007/s40806-016-0048-6/figures/1)
 
-## Discussion
+# Discussion
 
 Our results largely replicated the findings by Sprecher et al. ([1994](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR27 "Sprecher, S., Sullivan, Q., & Hatfield, E. (1994). Mate selection preferences: sex differences examined in a national sample. Journal of Personality and Social Psychology, 66(6), 1074–1080. doi:
 10.1037/0022-3514.66.6.1074
@@ -141,7 +361,7 @@ Finally, the finding that women were more willing to marry someone previously ma
 10.1007/s12110-007-9004-2
 .")). That being said, the meaning of marriage, and the potential stigma associated with divorce, likely differs between now and 20 years ago and it is possible that individuals are simply more indifferent to (previous) marriage.
 
-### Limitations
+## Limitations
 
 Unlike the original study, designed to be nationally representative, we relied on an online opportunity sample via CrowdFlower. It has been argued that such online studies capture to a large degree similar results as those in a psychology laboratory (Buhrmester et al. [2011](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR3 "Buhrmester, M., Kwang, T., & Gosling, S. D. (2011). Amazon’s mechanical Turk a new source of inexpensive, yet high-quality, data? Perspectives on Psychological Science, 6(1), 3–5. doi:
 10.1177/1745691610393980
@@ -151,7 +371,7 @@ Unlike the original study, designed to be nationally representative, we relied o
 10.1037/0022-3514.66.6.1074
 .")) study, with the additional caveat that questions about marriage might be very differently approached now than 20 years ago.
 
-## Implications and Future Research
+# Implications and Future Research
 
 Our findings are in line with the argument that evolved mate preferences exist, while also highlighting that these preferences are likely malleable to socioeconomic temporal trends (e.g., Boxer et al. [2013](https://link.springer.com/article/10.1007/s40806-016-0048-6#ref-CR2 "Boxer, C. F., Noonan, M. C., & Whelan, C. B. (2013). Measuring mate preferences: a replication and extension. Journal of Family Issues, 36(2), 163–187. doi:
 10.1177/0192513X13490404
@@ -169,12 +389,12 @@ Our findings are in line with the argument that evolved mate preferences exist, 
 10.1177/1745691612460688
 .")) can be a useful and necessary first step in examining the robustness of documented sex differences in mate preferences and choice as argued for by evolutionary psychologists, well as examining whether the argued for sex differences have narrowed or not.
 
-## Notes
+# Notes
 
 1.  Given the evolutionary framework we adopt in this paper, we will consistently refer to sex differences in these preferences rather than gender differences.
     
 
-## References
+# References
 
 -   Amir, Y., & Sharon, I. (1990). Replication research: a “must” for the scientific advancement of psychology. _Journal of Social Behavior & Personality, 5_(4), 51–59.
     
@@ -319,20 +539,20 @@ Our findings are in line with the argument that evolved mate preferences exist, 
 
 [Download references](https://citation-needed.springer.com/v2/references/10.1007/s40806-016-0048-6?format=refman&flavour=references)
 
-## Author information
+# Author information
 
-### Authors and Affiliations
+## Authors and Affiliations
 
 1.  Department of Experimental and Applied Psychology, Vrije Universiteit Amsterdam, Transitorium Building; room, 1B17, 1081BT, Amsterdam, The Netherlands
     
     Jens Bech-Sørensen & Thomas V. Pollet
     
 
-### Corresponding author
+## Corresponding author
 
 Correspondence to [Thomas V. Pollet](mailto:t.v.pollet@vu.nl).
 
-## Rights and permissions
+# Rights and permissions
 
 **Open Access** This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.
 
