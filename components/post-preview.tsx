@@ -10,7 +10,7 @@ type Props = {
 };
 
 const PostPreview = ({ title, date, excerpt, slug }: Props) => {
-  const maxExcerptLength = 300;
+  const maxExcerptLength = 400;
 
   if (excerpt.length > maxExcerptLength) {
     const lastPeriodIndex = excerpt.lastIndexOf(".", maxExcerptLength);
@@ -30,16 +30,16 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
   }
 
   return (
-    <div className="hover:bg-violet-50 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:shadow-violet-200 border-violet-300 transition duration-200 ease-in-out hover:border-violet-500 transform hover:-translate-y-1">
-      <h2 className="text-3xl leading-snug pb-2 hover:text-violet-700 transition duration-200">
+    <div className="hover:bg-violet-50 border p-6 rounded-3xl shadow-sm hover:shadow-lg hover:shadow-violet-200 border-violet-300 transition duration-200 ease-in-out hover:border-violet-500 transform hover:-translate-y-1">
+      <h2 className="text-3xl leading-snug pb-1 hover:text-violet-700 transition duration-200">
         {title}
       </h2>
-      <div className="text-lg text-slate-400">
+      <div className="text-lg text-violet-700">
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed">{excerpt}..</p>
       <div>
-        <span className="whitespace-nowrap text-blue-600 lg:hidden">
+        <span className="whitespace-nowrap text-violet-600 lg:hidden">
           Read more...
         </span>
       </div>
@@ -48,3 +48,6 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
 };
 
 export default PostPreview;
+
+//TODO: fix different heights
+//TODO: Look into article width. too narrow again?
