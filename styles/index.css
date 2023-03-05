@@ -15,24 +15,3 @@ html {
   }
 }
 
-.post-enter {
-  opacity: 0;
-  transform: translateY(0px);
-}
-
-.post-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 500ms ease-out, transform 100ms ease-out;
-}
-
-.post-exit {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.post-exit-active {
-  opacity: 0;
-  transform: translateY(0px);
-  transition: opacity 100ms ease-in, transform 200ms ease-in;
-}

@@ -3,6 +3,7 @@ import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Link from "next/link";
 
 export type Props = {
   posts: Post[];
@@ -84,20 +85,22 @@ const Stories = ({ posts }: Props) => {
           />
         </div>
       </div>
-      <TransitionGroup className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:gap-x-16 lg:gap-x-20 gap-y-4 md:gap-y-6 lg:gap-y-16">
-        {filteredPosts.map((post) => (
-          <CSSTransition key={post.slug} classNames="post" timeout={100}>
-            <PostPreview
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              slug={post.slug}
-              excerpt={post.excerpt}
-              genre={post.genre}
-            />
-          </CSSTransition>
-        ))}
-      </TransitionGroup>
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-16 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-20 md:gap-x-16">
+        {filteredPosts.map(
+          ({ title, coverImage, date, slug, excerpt, genre }) => (
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <PostPreview
+                title={title}
+                coverImage={coverImage}
+                date={date}
+                slug={slug}
+                excerpt={excerpt}
+                genre={genre}
+              />
+            </Link>
+          )
+        )}
+      </div>
 
       <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
     </section>
