@@ -54,7 +54,7 @@ const Stories = ({ posts }: Props) => {
             }`}
             onClick={() => setSelectedGenre(null)}
           >
-            Any
+            All
           </button>
           {Object.values(Genre).map((genre?) => (
             <button
