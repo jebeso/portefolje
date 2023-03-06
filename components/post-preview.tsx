@@ -30,7 +30,7 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
   }
 
   return (
-    <div className="hover:bg-violet-50 p-6 rounded-3xl shadow-sm hover:shadow-lg hover:shadow-violet-200 border-violet-300 transition duration-200 ease-in-out hover:border-violet-500 transform hover:-translate-y-1">
+    <div className="hover:bg-violet-50 p-6 rounded-3xl shadow-sm hover:shadow-lg hover:shadow-violet-200 border-gray transition duration-200 ease-in-out hover:border-violet-300 border hover:border transform hover:-translate-y-1">
       <h2 className="text-3xl leading-snug pb-1 hover:text-violet-700 transition duration-200">
         {title}
       </h2>

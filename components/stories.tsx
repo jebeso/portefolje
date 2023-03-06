@@ -46,7 +46,7 @@ const Stories = ({ posts }: Props) => {
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
-      <div className="mb-8 text-center sm:text-left flex flex-col">
+      <div className="mb-8 text-center md:text-left flex flex-col">
         <div>
           <button
             className={`${buttonStyling} ${
@@ -84,7 +84,7 @@ const Stories = ({ posts }: Props) => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-16 xl:gap-x-36 md:px-12 pt-10">
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre }) => (
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
