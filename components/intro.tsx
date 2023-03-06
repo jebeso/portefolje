@@ -8,7 +8,14 @@ const Intro = () => {
       "This is where I write stuff!",
       "Hei bloggen!",
       "It's a blog, I guess!",
-      "It's a portfolio, I guess!",
+      "Is it a portfolio?",
+      "Catchy blog title!",
+      "You feel strange!",
+      "Roll for initiative!",
+      "You take 2d6+4 fire damage!",
+      "I Made You Some Content!",
+      "Most quiet: Kayla Day.",
+      "Keyboard compatible!",
     ];
     const randomQuip = quips[Math.floor(Math.random() * quips.length)];
     setCurrentQuip(randomQuip);

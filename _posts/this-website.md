@@ -1,6 +1,6 @@
 ---
-title: 'I coded this website'
-excerpt: "For some reason I always wanted a blog and a place to put and share things I write. So now that I've learned a fair amount of front end development, I just did it. Maybe it can act as a portfolio and in addition to LinkedIn for various things I do."
+title: 'Article 3'
+excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 genre: 'IT'
 date: '2023-03-04T17:14:07.322Z'
 ogImage:

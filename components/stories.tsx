@@ -80,22 +80,24 @@ const Stories = ({ posts }: Props) => {
             type="text"
             value={searchTerm}
             onChange={handleSearchTerm}
-            placeholder="Search..."
+            placeholder="Filter..."
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 xl:grid-cols-2 lg:gap-x-10 md:gap-x-16 md:px-12 pt-10">
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-16 xl:gap-x-36 md:px-12 pt-10">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre }) => (
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <PostPreview
-                title={title}
-                coverImage={coverImage}
-                date={date}
-                slug={slug}
-                excerpt={excerpt}
-                genre={genre}
-              />
+              <div className="">
+                <PostPreview
+                  title={title}
+                  coverImage={coverImage}
+                  date={date}
+                  slug={slug}
+                  excerpt={excerpt}
+                  genre={genre}
+                />
+              </div>
             </Link>
           )
         )}
