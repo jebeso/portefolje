@@ -88,7 +88,7 @@ const Stories = ({ posts }: Props) => {
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre }) => (
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <div className="">
+              <div className="h-full flex">
                 <PostPreview
                   title={title}
                   coverImage={coverImage}
