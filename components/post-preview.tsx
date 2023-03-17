@@ -7,6 +7,7 @@ type Props = {
   excerpt: string;
   slug: string;
   genre: string;
+  language: string;
 };
 
 const PostPreview = ({ title, date, excerpt, slug }: Props) => {

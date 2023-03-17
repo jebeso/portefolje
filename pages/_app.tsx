@@ -3,7 +3,7 @@ import "../styles/index.css";
 import { Roboto } from "@next/font/google";
 
 const ptSerif = Roboto({
-  weight: "400",
+  weight: "500",
   subsets: ["latin"],
 });
 

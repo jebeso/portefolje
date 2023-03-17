@@ -14,31 +14,33 @@ export enum Genre {
   Fiction = "Fiction",
 }
 
+export enum Language {
+  ENG = "ENG",
+  NOR = "NOR",
+}
+
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(
+    null
+  );
 
   const handleSearchTerm = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredPosts =
-    selectedGenre && !searchTerm
-      ? posts.filter((post) => post.genre === selectedGenre)
-      : !selectedGenre && searchTerm
-      ? posts.filter(
-          (post) =>
-            post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            post.title.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      : selectedGenre && searchTerm
-      ? posts.filter(
-          (post) =>
-            post.genre === selectedGenre &&
-            (post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              post.title.toLowerCase().includes(searchTerm.toLowerCase()))
-        )
-      : posts;
+  const filteredPosts = posts
+    .filter((post) =>
+      selectedLanguage ? post.language === selectedLanguage : true
+    )
+    .filter((post) => (!selectedGenre ? true : post.genre === selectedGenre))
+    .filter((post) =>
+      !searchTerm
+        ? true
+        : post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
@@ -50,7 +52,9 @@ const Stories = ({ posts }: Props) => {
         <div>
           <button
             className={`${buttonStyling} ${
-              selectedGenre === null ? "bg-violet-200" : ""
+              selectedGenre === null
+                ? "bg-violet-200 transition duration-200 ease-in-out border-violet-600"
+                : "hover:bg-violet-100 transition duration-200 ease-in-out"
             }`}
             onClick={() => setSelectedGenre(null)}
           >
@@ -60,7 +64,9 @@ const Stories = ({ posts }: Props) => {
             <button
               key={genre}
               className={`${buttonStyling} ${
-                selectedGenre === genre ? "bg-violet-200" : ""
+                selectedGenre === genre
+                  ? "bg-violet-200 hover:bg-violet-100 transition duration-200 ease-in-out border-violet-600"
+                  : "hover:bg-violet-100 transition duration-200 ease-in-out"
               }`}
               onClick={() => {
                 if (selectedGenre === genre) {
@@ -73,7 +79,24 @@ const Stories = ({ posts }: Props) => {
               {genre}
             </button>
           ))}
+          <button
+            className={`${buttonStyling} w-44 md:w-40 ${
+              selectedLanguage === Language.ENG
+                ? "bg-violet-200 hover:bg-violet-100 transition duration-200 ease-in-out border-violet-600"
+                : "hover:bg-violet-100 transition duration-200 ease-in-out"
+            }`}
+            onClick={() =>
+              setSelectedLanguage(
+                selectedLanguage === Language.ENG ? null : Language.ENG
+              )
+            }
+          >
+            {selectedLanguage === Language.ENG
+              ? "I'm chuffed to bits!"
+              : "Shit, it's på Norsk!"}
+          </button>
         </div>
+        <div></div>
         <div>
           <input
             className={searchStyling}
@@ -83,10 +106,36 @@ const Stories = ({ posts }: Props) => {
             placeholder="Filter..."
           />
         </div>
+        <div className="text-gray-400">
+          {filteredPosts.length > 0 &&
+            `Displaying ${
+              filteredPosts.length <= 9
+                ? [
+                    "one",
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six",
+                    "seven",
+                    "eight",
+                    "nine",
+                  ][filteredPosts.length - 1]
+                : filteredPosts.length
+            } ${selectedLanguage === Language.ENG ? "English " : ""}post${
+              filteredPosts.length !== 1 ? "s" : ""
+            }`}
+
+          {filteredPosts.length === 0 &&
+            `${
+              selectedLanguage === Language.ENG ? "No English " : "No "
+            }posts remain 🥲`}
+        </div>
       </div>
+
       <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
         {filteredPosts.map(
-          ({ title, coverImage, date, slug, excerpt, genre }) => (
+          ({ title, coverImage, date, slug, excerpt, genre, language }) => (
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <div className="h-full flex">
                 <PostPreview
@@ -96,6 +145,7 @@ const Stories = ({ posts }: Props) => {
                   slug={slug}
                   excerpt={excerpt}
                   genre={genre}
+                  language={language}
                 />
               </div>
             </Link>
@@ -103,7 +153,7 @@ const Stories = ({ posts }: Props) => {
         )}
       </div>
 
-      <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
+      <BottomBar filteredPosts={filteredPosts.length} />
     </section>
   );
 };

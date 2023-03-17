@@ -9,6 +9,7 @@ type PostType = {
     url: string;
   };
   content: string;
+  language: string;
 };
 
 export default PostType;
