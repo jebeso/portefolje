@@ -55,7 +55,7 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} ${
               selectedGenre === null
-                ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out border-violet-700"
+                ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
                 : "transition duration-500 ease-in-out dark:border-violet-800"
             }`}
             onClick={() => setSelectedGenre(null)}
@@ -67,7 +67,7 @@ const Stories = ({ posts }: Props) => {
               key={genre}
               className={`${buttonStyling} ${
                 selectedGenre === genre
-                  ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600"
+                  ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600 text-white"
                   : "transition duration-500 ease-in-out dark:border-violet-800"
               }`}
               onClick={() => {
@@ -84,7 +84,7 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} w-44 md:w-42 ${
               selectedLanguage === Language.ENG
-                ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out border-violet-700"
+                ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
                 : "transition duration-500 ease-in-out dark:border-violet-800"
             }`}
             onClick={() =>
@@ -94,8 +94,8 @@ const Stories = ({ posts }: Props) => {
             }
           >
             {selectedLanguage === Language.ENG
-              ? "Hello, old bean! 🍵"
-              : "Shit, it's på Norsk!"}
+              ? "Bob's your uncle 🍵"
+              : "Show English only"}
           </button>
         </div>
         <div></div>
@@ -108,7 +108,7 @@ const Stories = ({ posts }: Props) => {
             placeholder="Filter..."
           />
         </div>
-        <div className="text-gray-400 pl-3">
+        <div className="text-gray-400 pl-1">
           {filteredPosts.length > 0 && (
             <>
               Showing{" "}
@@ -125,15 +125,27 @@ const Stories = ({ posts }: Props) => {
                     "nine",
                   ][filteredPosts.length - 1]
                 : filteredPosts.length}{" "}
-              {selectedLanguage === Language.ENG ? "English " : ""}
+              {selectedLanguage === Language.ENG && (
+                <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                  English{" "}
+                </span>
+              )}
               {selectedGenre && `${selectedGenre.toLowerCase()} `}
               post{filteredPosts.length !== 1 ? "s" : ""}
             </>
           )}
-
           {filteredPosts.length === 0 && (
             <>
-              {selectedLanguage === Language.ENG ? "No English " : "No "}
+              {selectedLanguage === Language.ENG ? (
+                <>
+                  <span>No </span>
+                  <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                    English{" "}
+                  </span>
+                </>
+              ) : (
+                "No "
+              )}
               posts to show 🥲
             </>
           )}

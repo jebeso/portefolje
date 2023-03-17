@@ -6,12 +6,12 @@ coverImage: "/assets/blog/paper.jpg"
 date: "2016-01-29T17:14:07.322Z"
 language: "ENG"
 ogImage:
-  url: "/assets/blog/paper.jpg"
+  url1: ""
 ---
 
 [I published a study](https://link.springer.com/article/10.1007/s40806-016-0048-6) as part of my master's degree in Psychology. It has been cited a lot, so I guess you could say my academic career was short and impactful?
 
-![](https://cloud.bechsor.no/apps/files_sharing/publicpreview/EEF5scJtprZdy5t?file=/&fileId=637149&x=2560&y=1440&a=true)
+![](/publication.jpg)
 
 # Abstract
 

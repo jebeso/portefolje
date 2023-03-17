@@ -1,19 +1,19 @@
 ---
-title: "Kronikk i BT om korona"
+title: "Kronikk i Bergens Tidende"
 excerpt: "For mange betyr gjenåpningen at utallige sosiale aktiviteter og forpliktelser skal tas igjen. I tur og orden skal fritiden svelges av styremøter, fester, hytteturer, julebord, familietreff og foreldremøter. Mye av det skal gjerne dokumenteres. Tanken billedgjør hos meg en parodi på «Den Norske Flokken», som ikke makter eller er i stand til mer enn å kare seg tilbake på sin rastløse kjepphest. Se hvordan vi klamrer oss fast når vi skal gjenvinne vår sosiale relevans! Må alle være med på leken? Vil du heller bruke det beste fra nedstengingen til å sette sunne sosiale grenser for deg selv? Da er dette et frieri til deg. I en snart toårig kollektiv feberfantasi har vi observert et forlatt Norge fra stuevinduet. Og akkurat når du leser dette, krysser noen av oss hjemmets dørterskel. Vi bugner av sosialt overskudd som dirrer etter å bli utslettet."
 genre: "Prose"
 coverImage: "/assets/blog/paper.jpg"
 date: "2021-10-22T17:14:07.322Z"
 language: "NOR"
 ogImage:
-  url: "/assets/blog/paper.jpg"
+  url: ""
 ---
 
 [Publisert i Bergens Tidende](https://www.bt.no/btmeninger/debatt/i/28qgXy/hvem-vil-du-vaere-etter-gjenaapningen)
 
 For mange betyr gjenåpningen at utallige sosiale aktiviteter og forpliktelser skal tas igjen. I tur og orden skal fritiden svelges av styremøter, fester, hytteturer, julebord, familietreff og foreldremøter. Mye av det skal gjerne dokumenteres.
 
-![](https://cloud.bechsor.no/apps/files_sharing/publicpreview/ri4bWs2KgjcwoJq?file=/&fileId=637156&x=2560&y=1440&a=true)
+![](/bt.jpg)
 
 Tanken billedgjør hos meg en parodi på «Den Norske Flokken», som ikke makter eller er i stand til mer enn å kare seg tilbake på sin rastløse kjepphest. Se hvordan vi klamrer oss fast når vi skal gjenvinne vår sosiale relevans!
 
