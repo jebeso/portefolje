@@ -18,10 +18,10 @@
 
 .markdown code {
   display: inline-block;
-  background: #f4f4f4;
+  background: #ddd6fe;
   border: 1px solid #ddd;
   border-left: 3px solid rgb(139 92 246);;
-  color: #666;
+  color: #000;
   page-break-inside: avoid;
   font-family: monospace;
   font-size: 15px;
@@ -32,6 +32,7 @@
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
+  border-radius: 4px;
 }
 
 .markdown h1 {

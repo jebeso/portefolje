@@ -95,7 +95,7 @@ const Stories = ({ posts }: Props) => {
             }
           >
             {selectedLanguage === Language.ENG
-              ? "I'm chuffed to bits!"
+              ? "Hello, old bean! 🍵"
               : "Shit, it's på Norsk!"}
           </button>
         </div>
