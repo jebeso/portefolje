@@ -83,7 +83,7 @@ const Stories = ({ posts }: Props) => {
             </button>
           ))}
           <button
-            className={`${buttonStyling} w-44 md:w-40 ${
+            className={`${buttonStyling} w-44 md:w-42 ${
               selectedLanguage === Language.ENG
                 ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out border-violet-700"
                 : "transition duration-500 ease-in-out dark:border-violet-800"
@@ -109,7 +109,7 @@ const Stories = ({ posts }: Props) => {
             placeholder="Filter..."
           />
         </div>
-        <div className="text-gray-400">
+        <div className="text-gray-400 pl-3">
           {filteredPosts.length > 0 &&
             `Displaying ${
               filteredPosts.length <= 9

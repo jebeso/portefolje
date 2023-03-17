@@ -10,7 +10,7 @@ type Props = {
   language: string;
 };
 
-const PostPreview = ({ title, date, excerpt, slug }: Props) => {
+const PostPreview = ({ title, date, excerpt, genre }: Props) => {
   const maxExcerptLength = 500;
 
   if (excerpt.length > maxExcerptLength) {
@@ -36,7 +36,7 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
         {title}
       </h2>
       <div className="text-lg dark:text-violet-300 text-violet-700">
-        <DateFormatter dateString={date} />
+        <DateFormatter dateString={date} genre={genre} />
       </div>
       <p className="text-lg">{excerpt}..</p>
       <div>

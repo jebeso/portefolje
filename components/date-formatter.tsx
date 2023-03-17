@@ -2,11 +2,15 @@ import moment from "moment";
 
 type Props = {
   dateString: string;
+  genre?: string;
 };
 
-const DateFormatter = ({ dateString }: Props) => {
+const DateFormatter = ({ dateString, genre }: Props) => {
   return (
-    <div className="select-none">Written {moment(dateString).fromNow()}</div>
+    <div className="select-none">
+      {genre && genre + ", "}
+      {moment(dateString).fromNow()}
+    </div>
   );
 };
 

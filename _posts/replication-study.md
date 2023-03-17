@@ -1,6 +1,6 @@
 ---
-title: "Article 2"
-excerpt: "I'm baby iPhone bodega boys skateboard, gastropub twee etsy pug before they sold out cred banh mi. Locavore pok pok poke bruh scenester vape, snackwave single-origin coffee. Whatever synth flexitarian pitchfork deep v plaid woke mustache. Trust fund dreamcatcher ugh keffiyeh. Cornhole pitchfork cliche, subway tile schlitz adaptogen locavore gatekeep literally cupping austin slow-carb air plant gorpcore chicharrones. Selvage small batch lo-fi gentrify offal. Narwhal tote bag bodega boys fam tumeric tilde artisan sriracha pabst adaptogen selvage offal bitters pickled tonx. Schlitz hot chicken shabby chic edison bulb actually. Offal heirloom gochujang yes plz, polaroid drinking vinegar humblebrag narwhal kinfolk flannel. Taiyaki chambray vibecession tumeric neutral milk hotel fashion axe disrupt portland master cleanse single-origin coffee waistcoat swag keffiyeh messenger bag. La croix vegan tonx organic shabby chic forage hell of. Coloring book portland fit vaporware JOMO church-key air plant narwhal. Art party snackwave stumptown pinterest selvage crucifix paleo YOLO tacos offal bitters. Hashtag pabst big mood franzen vaporware."
+title: "Psychology Publication"
+excerpt: "Evolutionary psychologists have argued for evolved sex differences in human mate preferences (e.g., (Buss and Barnes _Journal of Personality and Social Psychology 50_,559–570, 1986; Buss _American Scientist 73_,47–51, 1985, _Behavioral and Brain Sciences 12_, 1–49, 1989, 1994). Specifically, they have suggested that men and women place different values on physical appearance, fertility, and economic stability when they choose a long-term partner"
 genre: "Prose"
 coverImage: "/assets/blog/paper.jpg"
 date: "2016-01-29T17:14:07.322Z"
@@ -9,7 +9,7 @@ ogImage:
   url: "/assets/blog/paper.jpg"
 ---
 
-_I did a study as part of my master's degree in Psychology. The paper been cited more than 40 times, so I guess you could say my academic career was short and impactful?_
+[I published a study](https://link.springer.com/article/10.1007/s40806-016-0048-6) as part of my master's degree in Psychology. It has been cited a lot, so I guess you could say my academic career was short and impactful?
 
 # Abstract
 
@@ -335,5 +335,3 @@ Correspondence to [Thomas V. Pollet](mailto:t.v.pollet@vu.nl).
 # Rights and permissions
 
 **Open Access** This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.
-
-# [Link to the article](https://link.springer.com/article/10.1007/s40806-016-0048-6)
