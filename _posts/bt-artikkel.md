@@ -13,6 +13,8 @@ ogImage:
 
 For mange betyr gjenåpningen at utallige sosiale aktiviteter og forpliktelser skal tas igjen. I tur og orden skal fritiden svelges av styremøter, fester, hytteturer, julebord, familietreff og foreldremøter. Mye av det skal gjerne dokumenteres.
 
+![](https://cloud.bechsor.no/apps/files_sharing/publicpreview/ri4bWs2KgjcwoJq?file=/&fileId=637156&x=2560&y=1440&a=true)
+
 Tanken billedgjør hos meg en parodi på «Den Norske Flokken», som ikke makter eller er i stand til mer enn å kare seg tilbake på sin rastløse kjepphest. Se hvordan vi klamrer oss fast når vi skal gjenvinne vår sosiale relevans!
 
 Må alle være med på leken?
