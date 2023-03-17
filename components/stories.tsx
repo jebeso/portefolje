@@ -134,7 +134,7 @@ const Stories = ({ posts }: Props) => {
           {filteredPosts.length === 0 && (
             <>
               {selectedLanguage === Language.ENG ? "No English " : "No "}
-              posts remain 🥲
+              posts to show 🥲
             </>
           )}
         </div>
