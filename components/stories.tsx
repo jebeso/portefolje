@@ -3,7 +3,6 @@ import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
 import Link from "next/link";
-import ThemeChanger from "./theme-changer";
 
 export type Props = {
   posts: Post[];
@@ -144,8 +143,8 @@ const Stories = ({ posts }: Props) => {
       <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre, language }) => (
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <div className="h-full flex">
+            <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">
+              <div key={slug} className="h-full flex">
                 <PostPreview
                   title={title}
                   coverImage={coverImage}

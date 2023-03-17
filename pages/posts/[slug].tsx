@@ -43,7 +43,7 @@ export default function Post({ post, morePosts, preview }: Props) {
             <>
               <article className="mb-32 xl:px-40">
                 <Head>
-                  <title>{post.title} | Jens Bech-Sørensen</title>
+                  <title>{`${post.title} | Jens Bech-Sørensen`}</title>{" "}
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>
                 <PostHeader

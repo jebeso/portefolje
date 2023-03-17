@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import Switch from "react-switch";
 import { useState, useEffect } from "react";
-import { SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { SunIcon, MoonIcon, SparklesIcon } from "@heroicons/react/solid";
 
 const ThemeChanger = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -26,15 +26,15 @@ const ThemeChanger = () => {
         <Switch
           checked={checked}
           onChange={handleChange}
-          onColor="#581c87" // You can adjust this color based on your preference
-          offColor="#c4b5fd" // You can adjust this color based on your preference
+          onColor="#4c1d95" // You can adjust this color based on your preference
+          offColor="#a78bfa" // You can adjust this color based on your preference
           boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
           activeBoxShadow="0px 0px 1px 5px rgba(0, 0, 0, 0.2)"
           handleDiameter={24}
           uncheckedIcon={false}
           checkedIcon={false}
           uncheckedHandleIcon={<SunIcon className="text-yellow-500" />}
-          checkedHandleIcon={<MoonIcon className="text-gray-900" />}
+          checkedHandleIcon={<MoonIcon className="text-blue-700" />}
           height={22}
           width={50}
           className="react-switch"
