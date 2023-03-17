@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const Meta = () => {
   return (
@@ -31,12 +31,9 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`This is where Jens Bech-Sørensen writes stuff`}
-      />
+      <meta name="description" content={`It's Jens' blog!`} />
     </Head>
-  )
-}
+  );
+};
 
-export default Meta
+export default Meta;

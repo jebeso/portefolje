@@ -110,9 +110,10 @@ const Stories = ({ posts }: Props) => {
           />
         </div>
         <div className="text-gray-400 pl-3">
-          {filteredPosts.length > 0 &&
-            `Displaying ${
-              filteredPosts.length <= 9
+          {filteredPosts.length > 0 && (
+            <>
+              Showing{" "}
+              {filteredPosts.length <= 9
                 ? [
                     "one",
                     "two",
@@ -124,15 +125,19 @@ const Stories = ({ posts }: Props) => {
                     "eight",
                     "nine",
                   ][filteredPosts.length - 1]
-                : filteredPosts.length
-            } ${selectedLanguage === Language.ENG ? "English " : ""}post${
-              filteredPosts.length !== 1 ? "s" : ""
-            }`}
+                : filteredPosts.length}{" "}
+              {selectedLanguage === Language.ENG ? "English " : ""}
+              {selectedGenre && `${selectedGenre.toLowerCase()} `}
+              post{filteredPosts.length !== 1 ? "s" : ""}
+            </>
+          )}
 
-          {filteredPosts.length === 0 &&
-            `${
-              selectedLanguage === Language.ENG ? "No English " : "No "
-            }posts remain 🥲`}
+          {filteredPosts.length === 0 && (
+            <>
+              {selectedLanguage === Language.ENG ? "No English " : "No "}
+              posts remain 🥲
+            </>
+          )}
         </div>
       </div>
 
