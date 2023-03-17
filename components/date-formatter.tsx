@@ -8,7 +8,7 @@ type Props = {
 const DateFormatter = ({ dateString, genre }: Props) => {
   return (
     <div className="select-none">
-      {genre && genre + ", "}
+      {genre && genre + " - "}
       {moment(dateString).fromNow()}
     </div>
   );
