@@ -53,8 +53,8 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} ${
               selectedGenre === null
-                ? "bg-violet-200 transition duration-200 ease-in-out border-violet-600"
-                : "hover:bg-violet-100 transition duration-200 ease-in-out"
+                ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
+                : "transition duration-500 ease-in-out"
             }`}
             onClick={() => setSelectedGenre(null)}
           >
@@ -65,8 +65,8 @@ const Stories = ({ posts }: Props) => {
               key={genre}
               className={`${buttonStyling} ${
                 selectedGenre === genre
-                  ? "bg-violet-200 hover:bg-violet-100 transition duration-200 ease-in-out border-violet-600"
-                  : "hover:bg-violet-100 transition duration-200 ease-in-out"
+                  ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
+                  : "transition duration-500 ease-in-out"
               }`}
               onClick={() => {
                 if (selectedGenre === genre) {
@@ -82,8 +82,8 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} w-44 md:w-40 ${
               selectedLanguage === Language.ENG
-                ? "bg-violet-200 hover:bg-violet-100 transition duration-200 ease-in-out border-violet-600"
-                : "hover:bg-violet-100 transition duration-200 ease-in-out"
+                ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
+                : "transition duration-500 ease-in-out"
             }`}
             onClick={() =>
               setSelectedLanguage(

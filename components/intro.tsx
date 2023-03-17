@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 
 const Intro = () => {
   const quips = [
-    "This is where I write stuff!",
-    "Hello, there!",
-    "Catchy title!",
+    "<CatchyTitle type={cliche} />",
     "I made you some content!",
     "It's free real estate!",
   ];

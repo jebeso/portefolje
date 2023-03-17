@@ -20,3 +20,12 @@ html {
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
+
+.text-transition {
+  position: absolute;
+  transition: opacity 500ms ease-in-out;
+}
+
+.text-hidden {
+  opacity: 0;
+}
