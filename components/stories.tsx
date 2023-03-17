@@ -3,6 +3,7 @@ import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
 import Link from "next/link";
+import ThemeChanger from "./theme-changer";
 
 export type Props = {
   posts: Post[];
@@ -44,7 +45,9 @@ const Stories = ({ posts }: Props) => {
 
   const buttonStyling =
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + "mr-0 w-44 outline-none";
+  const searchStyling =
+    buttonStyling +
+    "mr-0 w-44 outline-none dark:bg-gray-900 dark:border-violet-800 dark:placeholder-gray-400";
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
@@ -53,8 +56,8 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} ${
               selectedGenre === null
-                ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
-                : "transition duration-500 ease-in-out"
+                ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out border-violet-700"
+                : "transition duration-500 ease-in-out dark:border-violet-800"
             }`}
             onClick={() => setSelectedGenre(null)}
           >
@@ -65,8 +68,8 @@ const Stories = ({ posts }: Props) => {
               key={genre}
               className={`${buttonStyling} ${
                 selectedGenre === genre
-                  ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
-                  : "transition duration-500 ease-in-out"
+                  ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600"
+                  : "transition duration-500 ease-in-out dark:border-violet-800"
               }`}
               onClick={() => {
                 if (selectedGenre === genre) {
@@ -82,8 +85,8 @@ const Stories = ({ posts }: Props) => {
           <button
             className={`${buttonStyling} w-44 md:w-40 ${
               selectedLanguage === Language.ENG
-                ? "bg-violet-200 transition duration-500 ease-in-out border-violet-600"
-                : "transition duration-500 ease-in-out"
+                ? "dark:bg-violet-900 bg-violet-200 transition duration-500 ease-in-out border-violet-700"
+                : "transition duration-500 ease-in-out dark:border-violet-800"
             }`}
             onClick={() =>
               setSelectedLanguage(

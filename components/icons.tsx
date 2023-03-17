@@ -1,5 +1,6 @@
 import { AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
+import ThemeChanger from "./theme-changer";
 
 const size = 28;
 const iconCSS = "transition-colors hover:text-violet-500";
@@ -16,6 +17,9 @@ const Icons = () => {
       <a target="_blank" href="https://github.com/jensbech">
         <FiGithub size={size} className={iconCSS}></FiGithub>
       </a>
+      <div className="">
+        <ThemeChanger />
+      </div>
     </div>
   );
 };
