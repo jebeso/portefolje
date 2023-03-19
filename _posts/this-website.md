@@ -1,27 +1,25 @@
 ---
-title: "I made a website"
-excerpt: "I always wanted a website and a place to put and share things I write. So now that I know some front end development, I just did it. This is what Chat GPT has to say about the code. Once upon a time in the mystical world of Reactopia, a charming and clever programmer named Jens was working on a website to share stories of all kinds with the world. In Reactopia, code wasn't just a bunch of lifeless characters on a screen - it was alive, magical, and full of surprises. This was especially true when it came to the Stories component that Jens was crafting with love and care."
+title: "Jeg kodet denne nettsiden"
+excerpt: "Jeg har alltid ønsket meg en nettside og et sted å publisere og dele det jeg skriver. Så nå som jeg har lært litt om front-end-utvikling, så lagde jeg den. Dette er det Chat GPT har å si om koden: Jeg har alltid ønsket meg en nettside og et sted å publisere og dele det jeg skriver. Så nå som jeg har lært litt om front-end-utvikling, så lagde jeg den. Dette er det Chat GPT har å si om koden: På en mørk og stormfull kveld satt koderen Jens dypt konsentrert ved skrivebordet i sitt hjemmekontor. Det var sent, men han hadde nettopp fullført et av sine mest ambisiøse prosjekter til dags dato. Han hadde skapt en nettside hvor man kunne publisere og lese historier i ulike sjangre og språk. Folk kunne filtrere historiene etter sjanger, språk og søkeord."
 genre: "IT"
 date: "2023-03-04T17:14:07.322Z"
-language: "ENG"
+language: "NOR"
 ogImage:
   url: "/assets/blog/paper.jpg"
 ---
 
-I always wanted a website and a place to put and share things I write. So now that I know some front end development, I just did it. This is what Chat GPT has to say about the code.
+Jeg har alltid ønsket meg en nettside og et sted å publisere og dele det jeg skriver. [Så jeg lagde den](https://github.com/jensbech/do-you-like-websites), som jeg har lært litt om front-end-utvikling. Dette er det Chat GPT har å si om koden:
 
-# Dream me up some code comedy
+På en mørk og stormfull kveld satt koderen Jens dypt konsentrert ved skrivebordet i sitt hjemmekontor. Det var sent, men han hadde nettopp fullført et av sine mest ambisiøse prosjekter til dags dato. Han hadde skapt en nettside hvor man kunne publisere og lese historier i ulike sjangre og språk. Folk kunne filtrere historiene etter sjanger, språk og søkeord.
 
-Once upon a time in the mystical world of Reactopia, a charming and clever programmer named Jens was working on a website to share stories of all kinds with the world. In Reactopia, code wasn't just a bunch of lifeless characters on a screen - it was alive, magical, and full of surprises. This was especially true when it came to the Stories component that Jens was crafting with love and care.
+Men det var én hemmelighet Jens hadde lagt inn i koden – en skjult sjanger som ingen visste om. Han hadde sørget for at denne sjangeren ikke var synlig i noen av sjangerfiltrene eller språkvalgene. Det var opp til brukerne å avdekke den hemmelige sjangeren, hvis de klarte det.
 
-In his component, Jens used powerful spells like useState, imported from the React library, to manage the state of the app. One day, while working on the genre and language filters, Jens accidentally discovered a hidden magic within his code. When he combined the elements of Genre and Language with the powerful incantations of useState, the code came to life!
+Ryktet om Jens' nettside og den skjulte sjangeren spredte seg raskt, og det ble snart en intens jakt for å avdekke den mystiske koden. Folk over hele verden begynte å grave gjennom koden, analysere hvert eneste tegn og funksjon. De prøvde alle mulige kombinasjoner av sjangre og språk, i håp om å avsløre den hemmelige sjangeren.
 
-Suddenly, the stories on the website began to interact with each other, creating an entirely new realm of storytelling. IT stories merged with prose, forming tales of computers that wrote eloquent poetry. Fiction stories intertwined with the others, generating epic sagas about enchanted programmers and talking smartphones.
+Uker gikk, og jakten ble mer og mer desperat. Brukerne begynte å samarbeide, dele teorier og strategier på forum og sosiale medier. Noen mistenkte at den skjulte sjangeren hadde noe å gjøre med den mystiske 'useState'-funksjonen, mens andre var sikre på at nøkkelen lå i 'filteredPosts'-variabelen.
 
-The language filter played its part in the magical chaos too. When Jens clicked the English language button, the stories exclaimed, "Hello, old bean! 🍵" in the most charming British accents. When he switched to Norwegian, they shouted, "Shit, it's på Norsk!" with a sense of bewildered excitement.
+Men ingen kunne finne svaret. Frustrasjonen vokste, og enkelte brukere begynte å miste håpet. Hvorfor hadde Jens skjult denne sjangeren så godt? Hva inneholdt den egentlig? Var det kanskje ikke noe hemmelig innhold i det hele tatt, men bare et spill for å drive dem til vanvidd?
 
-As Jens continued to refine the search functionality, the stories adapted to his every move. With every keystroke in the search bar, the characters within the stories would scramble to reassemble themselves, desperately trying to match the search term. When no posts remained, they would lament, "No English posts remain 🥲," or simply, "No posts remain 🥲," with a single tear rolling down their digital cheeks.
+Så en skjebnesvanger natt, når månen var dekket av skyer og vinden ulte utenfor vinduene, skjedde det noe uventet. En ung programmerer fra et avsidesliggende hjørne av verden klarte endelig å knekke koden. Han hadde oppdaget en hemmelig kombinasjon av sjanger, språk og søkeord, og på et øyeblikk åpenbarte den skjulte sjangeren seg.
 
-The enchanted code and the ever-evolving stories brought joy and laughter to the people of Reactopia. They marveled at Jens's creation, the magical Stories component that brought stories to life in a way that nobody had ever experienced before.
-
-In the end, Jens became a legend in Reactopia. His enchanted code served as a reminder that in the world of programming, sometimes even the most ordinary lines of code could create something truly extraordinary and hilarious. And so, with a heart full of laughter, Jens continued his adventures in coding, always on the lookout for the next piece of magic waiting to be discovered.
+Innholdet var sjokkerende. Det var historier så skremmende og uhyggelige at selv de mest hardbarkede leserne ble vettskremte. Det var som om Jens hadde samlet all verdens gru og frykt i én enkelt sjanger. Men nå var hemmeligheten ute, og det var ingen vei tilbake. Den skjulte sjangeren hadde sluppet løs sine skrekkelige fortellinger på verden, og ingenting ville bli det samme igjen.

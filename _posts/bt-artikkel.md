@@ -1,5 +1,5 @@
 ---
-title: "Kronikk i Bergens Tidende"
+title: "Bergens Tidende: Hvem vil du være etter gjenåpningen?"
 excerpt: "For mange betyr gjenåpningen at utallige sosiale aktiviteter og forpliktelser skal tas igjen. I tur og orden skal fritiden svelges av styremøter, fester, hytteturer, julebord, familietreff og foreldremøter. Mye av det skal gjerne dokumenteres. Tanken billedgjør hos meg en parodi på «Den Norske Flokken», som ikke makter eller er i stand til mer enn å kare seg tilbake på sin rastløse kjepphest. Se hvordan vi klamrer oss fast når vi skal gjenvinne vår sosiale relevans! Må alle være med på leken? Vil du heller bruke det beste fra nedstengingen til å sette sunne sosiale grenser for deg selv? Da er dette et frieri til deg. I en snart toårig kollektiv feberfantasi har vi observert et forlatt Norge fra stuevinduet. Og akkurat når du leser dette, krysser noen av oss hjemmets dørterskel. Vi bugner av sosialt overskudd som dirrer etter å bli utslettet."
 genre: "Prose"
 coverImage: "/assets/blog/paper.jpg"
