@@ -1,4 +1,3 @@
-// hooks/useFilteredPosts.ts
 import { useState, useEffect } from "react";
 import type Post from "../interfaces/post";
 import { Genre, Language } from "../components/stories";
