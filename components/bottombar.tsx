@@ -33,9 +33,13 @@ const BottomBar = (props) => {
 
   return (
     <>
-      {isScrollable && props.filteredPosts > 0 ? <></> : null}
-      <ToTheTopButton />
-      <div className="pt-1 dark:bg-violet-900 bg-violet-700 rounded-t-md"></div>
+      {isScrollable && props.filteredPosts > 0 ? (
+        <>
+          {" "}
+          <ToTheTopButton />
+          <div className="pt-1 dark:bg-violet-900 bg-violet-700 rounded-t-md"></div>
+        </>
+      ) : null}
     </>
   );
 };

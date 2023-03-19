@@ -46,7 +46,7 @@ export default function Post({ post, preview }: Props) {
                 />
                 <PostBody content={post.content} />
               </article>
-              <BottomBar />
+              <BottomBar filteredPosts={true} />
             </>
           )}
         </Container>

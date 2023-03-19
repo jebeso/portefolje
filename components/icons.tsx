@@ -1,8 +1,3 @@
-import {
-  AiOutlineLinkedin,
-  AiOutlineMail,
-  AiTwotoneMail,
-} from "react-icons/ai";
 import ThemeChanger from "./theme-changer";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
