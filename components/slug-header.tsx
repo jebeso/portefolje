@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BiArrowBack } from "react-icons/bi";
 import ThemeChanger from "./theme-changer";
 
-const Header = () => {
+const SlugHeader = () => {
   return (
     <>
       <h2 className="text-xl md:text-2xl tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
@@ -26,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SlugHeader;

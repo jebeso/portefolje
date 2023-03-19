@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
-import Header from "../../components/header";
+import SlugHeader from "../../components/slug-header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
@@ -12,18 +12,12 @@ import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
 import { ptSerif } from "..";
+import BottomBar from "../../components/bottombar";
 
 type Props = {
   post: PostType;
   morePosts: PostType[];
   preview?: boolean;
-};
-
-const handleClick = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
 };
 
 export default function Post({ post, preview }: Props) {
@@ -36,7 +30,7 @@ export default function Post({ post, preview }: Props) {
       <Layout preview={preview}>
         <Container>
           <TopBar />
-          <Header />
+          <SlugHeader />
           {router.isFallback ? (
             <PostTitle>Loading…</PostTitle>
           ) : (
@@ -53,15 +47,7 @@ export default function Post({ post, preview }: Props) {
                 />
                 <PostBody content={post.content} />
               </article>
-              <div className="pt-10 text-center">
-                <button
-                  className="pb-12 mx-auto text-3xl mb-16 dark:text-violet-300 text-violet-700"
-                  onClick={handleClick}
-                >
-                  To the top! 👏
-                </button>
-                <div className="pt-1 dark:bg-violet-900 bg-violet-500 bottom-0 rounded-t-md"></div>
-              </div>
+              <BottomBar />
             </>
           )}
         </Container>

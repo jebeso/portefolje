@@ -8,6 +8,7 @@ import Post from "../interfaces/post";
 import { Roboto } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Icons from "../components/icons";
+import BottomBar from "../components/bottombar";
 
 export const ptSerif = Roboto({
   weight: "300",
@@ -29,6 +30,7 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           <Icons />
           {<Stories posts={allPosts} />}
+          <BottomBar />
         </Container>
       </Layout>
     </div>

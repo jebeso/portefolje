@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ToTheTopButton from "./toTheTopButton";
 
 const BottomBar = (props) => {
   const [isScrollable, setIsScrollable] = useState(false);
@@ -30,26 +31,11 @@ const BottomBar = (props) => {
     };
   }, []);
 
-  const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
-      {isScrollable && props.filteredPosts > 0 ? (
-        <div className="pt-10 text-center">
-          <button
-            className="pb-12 mx-auto text-3xl mb-16 dark:text-violet-300 text-violet-700"
-            onClick={handleClick}
-          >
-            To the top! 👏
-          </button>
-          <div className="pt-1 dark:bg-violet-900 bg-violet-700 rounded-t-md"></div>
-        </div>
-      ) : null}
+      {isScrollable && props.filteredPosts > 0 ? <></> : null}
+      <ToTheTopButton />
+      <div className="pt-1 dark:bg-violet-900 bg-violet-700 rounded-t-md"></div>
     </>
   );
 };

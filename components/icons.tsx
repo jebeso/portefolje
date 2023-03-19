@@ -17,7 +17,7 @@ const Icons = () => {
       <a target="_blank" href="https://github.com/jensbech">
         <FiGithub size={size} className={iconCSS}></FiGithub>
       </a>
-      <div className="">
+      <div>
         <ThemeChanger />
       </div>
     </div>
