@@ -3,6 +3,10 @@ import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
 import Link from "next/link";
+import GenreFilter from "./GenreFilter";
+import LanguageFilter from "./LanguageFilter";
+import SearchFilter from "./SearchFilter";
+import { useFilteredPosts } from "../hooks/useFilteredPosts";
 
 export type Props = {
   posts: Post[];
@@ -19,10 +23,6 @@ export enum Language {
   NOR = "NOR",
 }
 
-const transitionStyling = "transition duration-300 ease-in-out";
-const darkBorderStyling = "dark:border-violet-800";
-const darkBackgroundStyling = "dark:bg-violet-900";
-
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,87 +34,32 @@ const Stories = ({ posts }: Props) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredPosts = posts
-    .filter((post) =>
-      selectedLanguage ? post.language === selectedLanguage : true
-    )
-    .filter((post) => (!selectedGenre ? true : post.genre === selectedGenre))
-    .filter((post) =>
-      !searchTerm
-        ? true
-        : post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          post.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+  const filteredPosts = useFilteredPosts(
+    posts,
+    selectedLanguage,
+    selectedGenre,
+    searchTerm
+  );
 
-  const buttonStyling =
-    "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling =
-    buttonStyling +
-    "mr-0 w-44 outline-none dark:bg-gray-900 dark:border-violet-800 dark:placeholder-gray-400";
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center md:text-left flex flex-col">
         <div>
-          <div className="pb-0.5">
-            <button
-              className={`${buttonStyling} ${
-                selectedGenre === null
-                  ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} border-violet-700 text-white`
-                  : `${transitionStyling} ${darkBorderStyling}`
-              }`}
-              onClick={() => setSelectedGenre(null)}
-            >
-              Any
-            </button>
-            {Object.values(Genre).map((genre) => (
-              <button
-                key={genre}
-                className={`${buttonStyling} ${
-                  selectedGenre === genre
-                    ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} dark:border-violet-700 border-violet-600 text-white`
-                    : `${transitionStyling} ${darkBorderStyling}`
-                }`}
-                onClick={() => {
-                  if (selectedGenre === genre) {
-                    setSelectedGenre(null);
-                  } else {
-                    setSelectedGenre(genre);
-                  }
-                }}
-              >
-                {genre}
-              </button>
-            ))}
-          </div>
-          <div className="pb-0.5">
-            <button
-              className={`${buttonStyling} w-44 md:w-42 ${
-                selectedLanguage === Language.ENG
-                  ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} border-violet-700 text-white`
-                  : `${transitionStyling} ${darkBorderStyling}`
-              }`}
-              onClick={() =>
-                setSelectedLanguage(
-                  selectedLanguage === Language.ENG ? null : Language.ENG
-                )
-              }
-            >
-              {selectedLanguage === Language.ENG
-                ? "Bob's your uncle!"
-                : "Show English only"}
-            </button>
-          </div>
-        </div>
-        <div></div>
-        <div>
-          <input
-            className={searchStyling}
-            type="text"
-            value={searchTerm}
-            onChange={handleSearchTerm}
-            placeholder="Filter..."
+          <GenreFilter
+            selectedGenre={selectedGenre}
+            setSelectedGenre={setSelectedGenre}
           />
+          <div className="md:flex">
+            <LanguageFilter
+              selectedLanguage={selectedLanguage}
+              setSelectedLanguage={setSelectedLanguage}
+            />
+            <SearchFilter
+              searchTerm={searchTerm}
+              handleSearchTerm={handleSearchTerm}
+            />
+          </div>
         </div>
         <div className="text-gray-400 pl-1">
           {filteredPosts.length > 0 && (
@@ -173,7 +118,6 @@ const Stories = ({ posts }: Props) => {
           )}
         </div>
       </div>
-
       <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre, language }) => (
