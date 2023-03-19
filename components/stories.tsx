@@ -19,6 +19,10 @@ export enum Language {
   NOR = "NOR",
 }
 
+const transitionStyling = "transition duration-300 ease-in-out";
+const darkBorderStyling = "dark:border-violet-800";
+const darkBackgroundStyling = "dark:bg-violet-900";
+
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -47,105 +51,70 @@ const Stories = ({ posts }: Props) => {
   const searchStyling =
     buttonStyling +
     "mr-0 w-44 outline-none dark:bg-gray-900 dark:border-violet-800 dark:placeholder-gray-400";
-
-  const GenreButtons = () => (
-    <>
-      <button
-        className={`${buttonStyling} ${
-          selectedGenre === null
-            ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
-            : "transition duration-500 ease-in-out dark:border-violet-800"
-        }`}
-        onClick={() => setSelectedGenre(null)}
-      >
-        Any
-      </button>
-      {Object.values(Genre).map((genre) => (
-        <button
-          key={genre}
-          className={`${buttonStyling} ${
-            selectedGenre === genre
-              ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600 text-white"
-              : "transition duration-500 ease-in-out dark:border-violet-800"
-          }`}
-          onClick={() => {
-            if (selectedGenre === genre) {
-              setSelectedGenre(null);
-            } else {
-              setSelectedGenre(genre);
-            }
-          }}
-        >
-          {genre}
-        </button>
-      ))}
-    </>
-  );
-
-  const LanguageButton = () => (
-    <button
-      className={`${buttonStyling} w-44 md:w-42 ${
-        selectedLanguage === Language.ENG
-          ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
-          : "transition duration-500 ease-in-out dark:border-violet-800"
-      }`}
-      onClick={() =>
-        setSelectedLanguage(
-          selectedLanguage === Language.ENG ? null : Language.ENG
-        )
-      }
-    >
-      {selectedLanguage === Language.ENG
-        ? "Bob's your uncle!"
-        : "Show English only"}
-    </button>
-  );
-  const SearchInput = () => (
-    <input
-      className={searchStyling}
-      type="text"
-      value={searchTerm}
-      onChange={handleSearchTerm}
-      placeholder="Filter..."
-    />
-  );
-
-  const PostList = () => (
-    <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
-      {filteredPosts.map(
-        ({ title, coverImage, date, slug, excerpt, genre, language }) => (
-          <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">
-            <div key={slug} className="h-full flex">
-              <PostPreview
-                title={title}
-                coverImage={coverImage}
-                date={date}
-                slug={slug}
-                excerpt={excerpt}
-                genre={genre}
-                language={language}
-              />
-            </div>
-          </Link>
-        )
-      )}
-    </div>
-  );
-
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center md:text-left flex flex-col">
         <div>
           <div className="pb-0.5">
-            <GenreButtons />
+            <button
+              className={`${buttonStyling} ${
+                selectedGenre === null
+                  ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} border-violet-700 text-white`
+                  : `${transitionStyling} ${darkBorderStyling}`
+              }`}
+              onClick={() => setSelectedGenre(null)}
+            >
+              Any
+            </button>
+            {Object.values(Genre).map((genre) => (
+              <button
+                key={genre}
+                className={`${buttonStyling} ${
+                  selectedGenre === genre
+                    ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} dark:border-violet-700 border-violet-600 text-white`
+                    : `${transitionStyling} ${darkBorderStyling}`
+                }`}
+                onClick={() => {
+                  if (selectedGenre === genre) {
+                    setSelectedGenre(null);
+                  } else {
+                    setSelectedGenre(genre);
+                  }
+                }}
+              >
+                {genre}
+              </button>
+            ))}
           </div>
           <div className="pb-0.5">
-            <LanguageButton />
+            <button
+              className={`${buttonStyling} w-44 md:w-42 ${
+                selectedLanguage === Language.ENG
+                  ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} border-violet-700 text-white`
+                  : `${transitionStyling} ${darkBorderStyling}`
+              }`}
+              onClick={() =>
+                setSelectedLanguage(
+                  selectedLanguage === Language.ENG ? null : Language.ENG
+                )
+              }
+            >
+              {selectedLanguage === Language.ENG
+                ? "Bob's your uncle!"
+                : "Show English only"}
+            </button>
           </div>
         </div>
+        <div></div>
         <div>
-          <SearchInput />
+          <input
+            className={searchStyling}
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchTerm}
+            placeholder="Filter..."
+          />
         </div>
         <div className="text-gray-400 pl-1">
           {filteredPosts.length > 0 && (
@@ -204,7 +173,26 @@ const Stories = ({ posts }: Props) => {
           )}
         </div>
       </div>
-      <PostList />
+
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
+        {filteredPosts.map(
+          ({ title, coverImage, date, slug, excerpt, genre, language }) => (
+            <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">
+              <div key={slug} className="h-full flex">
+                <PostPreview
+                  title={title}
+                  coverImage={coverImage}
+                  date={date}
+                  slug={slug}
+                  excerpt={excerpt}
+                  genre={genre}
+                  language={language}
+                />
+              </div>
+            </Link>
+          )
+        )}
+      </div>
       <BottomBar filteredPosts={filteredPosts.length} />
     </section>
   );
