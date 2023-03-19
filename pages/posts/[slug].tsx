@@ -16,7 +16,6 @@ import BottomBar from "../../components/bottombar";
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
   preview?: boolean;
 };
 

@@ -30,7 +30,6 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           <Icons />
           {<Stories posts={allPosts} />}
-          <BottomBar />
         </Container>
       </Layout>
     </div>

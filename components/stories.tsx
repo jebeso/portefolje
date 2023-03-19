@@ -189,7 +189,6 @@ const Stories = ({ posts }: Props) => {
           )
         )}
       </div>
-
       <BottomBar filteredPosts={filteredPosts.length} />
     </section>
   );

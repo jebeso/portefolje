@@ -10,28 +10,32 @@ type Props = {
   language: string;
 };
 
+const truncateExcerpt = (excerpt, maxLength) => {
+  const lastPeriodIndex = excerpt.lastIndexOf(".", maxLength);
+  const lastQuestionIndex = excerpt.lastIndexOf("?", maxLength);
+  const lastExclamationIndex = excerpt.lastIndexOf("!", maxLength);
+  const lastPunctuationIndex = Math.max(
+    lastPeriodIndex,
+    lastQuestionIndex,
+    lastExclamationIndex
+  );
+
+  if (lastPunctuationIndex !== -1) {
+    return excerpt.substring(0, lastPunctuationIndex) + ".";
+  } else {
+    return excerpt.substring(0, maxLength) + "...";
+  }
+};
+
 const PostPreview = ({ title, date, excerpt, genre }: Props) => {
   const maxExcerptLength = 500;
 
   if (excerpt.length > maxExcerptLength) {
-    const lastPeriodIndex = excerpt.lastIndexOf(".", maxExcerptLength);
-    const lastQuestionIndex = excerpt.lastIndexOf("?", maxExcerptLength);
-    const lastExclamationIndex = excerpt.lastIndexOf("!", maxExcerptLength);
-    const lastPunctuationIndex = Math.max(
-      lastPeriodIndex,
-      lastQuestionIndex,
-      lastExclamationIndex
-    );
-
-    if (lastPunctuationIndex !== -1) {
-      excerpt = excerpt.substring(0, lastPunctuationIndex) + ".";
-    } else {
-      excerpt = excerpt.substring(0, maxExcerptLength) + "...";
-    }
+    excerpt = truncateExcerpt(excerpt, maxExcerptLength);
   }
 
   return (
-    <div className="dark:hover:bg-darkHover hover:bg-violet-50 p-6 rounded-3xl shadow-sm hover:shadow-lg dark:hover:shadow-darkHover hover:shadow-violet-200 dark:border-lessDarkHover dark:hover:border-violet-900 border-gray transition duration-200 ease-in-out hover:border-violet-300 border hover:border transform ">
+    <div className="dark:hover:bg-darkHover hover:bg-violet-50 p-6 rounded-3xl shadow-sm hover:shadow-lg dark:hover:shadow-darkHover hover:shadow-violet-200 dark:border-lessDarkHover dark:hover:border-violet-900 border-gray transition duration-200 ease-in-out hover:border-violet-300 border hover:border transform">
       <h2 className="text-3xl leading-snug pb-1 transition duration-100">
         {title}
       </h2>
