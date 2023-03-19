@@ -1,21 +1,26 @@
-import { AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi"
+import ThemeChanger from "./theme-changer";
+import { FaLinkedinIn } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+import { VscGithubAlt } from "react-icons/vsc";
 
-const size = 25;
-const hoverCSS = "transition-colors duration-200 hover:scale-125 transition duration-200 ease-in-out text-violet-500";
+const size = 28;
+const iconCSS = "transition-colors hover:text-violet-500";
 
 const Icons = () => {
   return (
-    <div className={"flex gap-2 justify-center md:justify-start"}>
+    <div className={"flex gap-4 justify-center md:justify-start"}>
       <a target="_blank" href="https://www.linkedin.com/in/jensbs/">
-        <AiOutlineLinkedin size={size} className={hoverCSS}></AiOutlineLinkedin>
+        <FaLinkedinIn size={size} className={iconCSS} />
       </a>
       <a target="_blank" href="mailto:jens@bechsor.no">
-        <AiOutlineMail size={size} className={hoverCSS}></AiOutlineMail>
+        <MdAlternateEmail size={size} className={iconCSS} />
       </a>
       <a target="_blank" href="https://github.com/jensbech">
-        <FiGithub size={size} className={hoverCSS}></FiGithub>
+        <VscGithubAlt size={size} className={iconCSS} />
       </a>
+      <div>
+        <ThemeChanger />
+      </div>
     </div>
   );
 };

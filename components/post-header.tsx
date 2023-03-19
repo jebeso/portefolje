@@ -1,29 +1,26 @@
 import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
 
-type Props = {
+interface Props {
   title: string;
-  coverImage: string;
+  coverImage?: string;
   date: string;
-};
+}
 
-const PostHeader = ({ title, coverImage, date }: Props) => {
-  return (
-    <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-8"></div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} src={coverImage} />
+const prefix = "Written ";
+
+const PostHeader = ({ title, date }: Props) => (
+  <>
+    <PostTitle>{title}</PostTitle>
+    <div className="hidden md:block md:mb-8" />
+    <div className="mb-8 md:mb-16 sm:mx-0" />
+    <div className="max-w-2xl mx-auto">
+      <div className="block md:hidden mb-6" />
+      <div className="mb-6 text-lg dark:text-violet-300 text-violet-700 text-center select-none mx-auto">
+        <DateFormatter dateString={date} prefix={prefix} />
       </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6"></div>
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
-      </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default PostHeader;

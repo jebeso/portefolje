@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  darkMode: "class", 
   theme: {
     extend: {
       colors: {
@@ -9,6 +10,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        darkHover: '#0b0416',
+        lessDarkHover: '#2c1155'
       },
       spacing: {
         28: '7rem',

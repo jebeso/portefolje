@@ -1,13 +1,17 @@
-import { AppProps } from 'next/app'
-import '../styles/index.css'
-import { PT_Serif } from '@next/font/google'
+import { AppProps } from "next/app";
+import "../styles/index.css";
+import { Roboto } from "@next/font/google";
+import { ThemeProvider } from "next-themes";
 
-const ptSerif = PT_Serif({
-  weight: '400',
-  subsets: ['latin'],
-})
-
+const ptSerif = Roboto({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component className={ptSerif.className} {...pageProps} />
+  return (
+    <ThemeProvider enableSystem={true} attribute="class">
+      <Component className={ptSerif.className} {...pageProps} />
+    </ThemeProvider>
+  );
 }

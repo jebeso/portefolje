@@ -6,9 +6,10 @@ type PostType = {
   excerpt: string;
   genre: string;
   ogImage: {
-    url: string;
+    url?: string;
   };
   content: string;
+  language: string;
 };
 
 export default PostType;

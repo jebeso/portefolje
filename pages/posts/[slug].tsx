@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
-import Header from "../../components/header";
+import SlugHeader from "../../components/slug-header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
@@ -11,23 +11,15 @@ import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import TopBar from "../../components/topbar";
-import BottomBar from "../../components/bottombar";
 import { ptSerif } from "..";
+import BottomBar from "../../components/bottombar";
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
   preview?: boolean;
 };
 
-const handleClick = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -37,16 +29,14 @@ export default function Post({ post, morePosts, preview }: Props) {
       <Layout preview={preview}>
         <Container>
           <TopBar />
-          <Header />
+          <SlugHeader />
           {router.isFallback ? (
             <PostTitle>Loading…</PostTitle>
           ) : (
             <>
               <article className="mb-32 xl:px-40">
                 <Head>
-                  <title>
-                    {post.title} | jens.bechsor.no
-                  </title>
+                  <title>{`${post.title} | Jens Bech-Sørensen`}</title>{" "}
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>
                 <PostHeader
@@ -56,15 +46,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 />
                 <PostBody content={post.content} />
               </article>
-              <div className="pt-10 text-center">
-          <button
-            className="pb-12 mx-auto text-3xl mb-16 text-violet-700"
-            onClick={handleClick}
-          >
-            To the top! 👏
-          </button>
-          <div className="pt-1 bg-violet-500 bottom-0 rounded-t-md"></div>
-        </div>
+              <BottomBar filteredPosts={true} />
             </>
           )}
         </Container>

@@ -5,15 +5,15 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
-import { PT_Serif } from "@next/font/google";
+import { Roboto } from "@next/font/google";
 import TopBar from "../components/topbar";
 import Icons from "../components/icons";
+import BottomBar from "../components/bottombar";
 
-export const ptSerif = PT_Serif({
-  weight: "400",
+export const ptSerif = Roboto({
+  weight: "300",
   subsets: ["latin"],
 });
-
 type Props = {
   allPosts: Post[];
 };
@@ -22,7 +22,7 @@ export default function Index({ allPosts }: Props) {
   return (
     <div className={ptSerif.className}>
       <Layout>
-        {/* <Head>
+        <Head>
           <title>{`jens.bechsor.no`}</title>
         </Head>
         <Container>
@@ -30,7 +30,7 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           <Icons />
           {<Stories posts={allPosts} />}
-        </Container> */}
+        </Container>
       </Layout>
     </div>
   );
@@ -44,6 +44,7 @@ export const getStaticProps = async () => {
     "coverImage",
     "excerpt",
     "genre",
+    "language",
   ]);
 
   return {

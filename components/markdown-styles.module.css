@@ -1,8 +1,10 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-normal;
 }
 
-.markdown p,
+.markdown p {
+  margin-bottom: 1em;
+}
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
@@ -16,10 +18,10 @@
 
 .markdown code {
   display: inline-block;
-  background: #f4f4f4;
+  background: #ddd6fe;
   border: 1px solid #ddd;
   border-left: 3px solid rgb(139 92 246);;
-  color: #666;
+  color: #000;
   page-break-inside: avoid;
   font-family: monospace;
   font-size: 15px;
@@ -30,16 +32,17 @@
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
+  border-radius: 4px;
 }
 
 .markdown h1 {
   @apply text-3xl mt-12 mb-2 leading-snug;
-  color: #6d28d9;
+  color: #8b5cf6;
 }
 
 .markdown h2 {
   @apply text-2xl mt-12 mb-4 leading-snug;
-  color: #6d28d9;
+  color: #8b5cf6;
   font-weight: bold;
 }
 
@@ -49,6 +52,10 @@
 
 .markdown a {
   text-decoration: underline;
+  font-weight: normal;
+  color: #1B4CCD;
+}
+
+.markdown strong {
   font-weight: bold;
-  color: rgb(59 130 246);
 }

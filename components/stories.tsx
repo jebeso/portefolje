@@ -2,109 +2,142 @@ import PostPreview from "./post-preview";
 import type Post from "../interfaces/post";
 import { useState } from "react";
 import BottomBar from "./bottombar";
-import BiCode from "react-icons"
+import Link from "next/link";
+import GenreFilter from "./GenreFilter";
+import LanguageFilter from "./LanguageFilter";
+import SearchFilter from "./SearchFilter";
+import { useFilteredPosts } from "../hooks/useFilteredPosts";
 
 export type Props = {
   posts: Post[];
 };
 
 export enum Genre {
-  Tech = "Tech",
+  IT = "IT",
   Prose = "Prose",
   Fiction = "Fiction",
+}
+
+export enum Language {
+  ENG = "ENG",
+  NOR = "NOR",
 }
 
 const Stories = ({ posts }: Props) => {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-setSelectedGenre
-  const handleGenreFilter = (genre: Genre) => {
-    (genre);
-  };
+  const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(
+    null
+  );
 
   const handleSearchTerm = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredPosts =
-    selectedGenre && !searchTerm
-      ? posts.filter((post) => post.genre === selectedGenre)
-      : !selectedGenre && searchTerm
-      ? posts.filter(
-          (post) =>
-            post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            post.title.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      : selectedGenre && searchTerm
-      ? posts.filter(
-          (post) =>
-            post.genre === selectedGenre &&
-            (post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              post.title.toLowerCase().includes(searchTerm.toLowerCase()))
-        )
-      : posts;
-
-  const buttonStyling =
-    "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
-  const searchStyling = buttonStyling + " mr-0 w-44";
+  const filteredPosts = useFilteredPosts(
+    posts,
+    selectedLanguage,
+    selectedGenre,
+    searchTerm
+  );
 
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
-      <div className="mb-8 text-center sm:text-left">
-        <input
-          className={searchStyling}
-          type="text"
-          value={searchTerm}
-          onChange={handleSearchTerm}
-          placeholder="Search keywords..."
-        />{" "}
-        <button
-          className={`${buttonStyling} ${
-            selectedGenre === null ? "bg-violet-100" : ""
-          }`}
-          onClick={() => setSelectedGenre(null)}
-        >
-          💜 Any subject
-        </button>
-        {Object.values(Genre).map((genre?) => (
-          <button
-            key={genre}
-            className={`${buttonStyling} ${
-              selectedGenre === genre ? "bg-violet-100 text-violet-900" : ""
-            }`}
-            onClick={() => {
-              if (selectedGenre === genre) {
-                setSelectedGenre(null);
-              } else {
-                setSelectedGenre(genre);
-              }
-            }}
-          >
-            {genre}
-          </button>
-        ))}
-      </div>
-      <div className="mb-8"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-16 mb-20">
-        {filteredPosts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-            genre={post.genre}
+      <div className="mb-8 text-center md:text-left flex flex-col">
+        <div>
+          <GenreFilter
+            selectedGenre={selectedGenre}
+            setSelectedGenre={setSelectedGenre}
           />
-        ))}
-        {filteredPosts.length === 0 && (
-          <div className="text-3xl pt-1 text-violet-800 text-center select-none">
-            No results for that selection...
+          <div className="md:flex">
+            <LanguageFilter
+              selectedLanguage={selectedLanguage}
+              setSelectedLanguage={setSelectedLanguage}
+            />
+            <SearchFilter
+              searchTerm={searchTerm}
+              handleSearchTerm={handleSearchTerm}
+            />
           </div>
+        </div>
+        <div className="text-gray-400 pl-1">
+          {filteredPosts.length > 0 && (
+            <>
+              Showing{" "}
+              <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                {" "}
+                {filteredPosts.length <= 9
+                  ? [
+                      "one",
+                      "two",
+                      "three",
+                      "four",
+                      "five",
+                      "six",
+                      "seven",
+                      "eight",
+                      "nine",
+                    ][filteredPosts.length - 1]
+                  : filteredPosts.length}{" "}
+                {selectedLanguage || !selectedGenre
+                  ? null
+                  : selectedGenre === "IT"
+                  ? "IT"
+                  : selectedGenre.toLowerCase()}
+              </span>{" "}
+              {selectedLanguage === Language.ENG && (
+                <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                  English{" "}
+                  {selectedGenre &&
+                    `${
+                      selectedGenre.toLowerCase() === "it"
+                        ? "IT"
+                        : selectedGenre.toLowerCase()
+                    } `}
+                </span>
+              )}
+              post{filteredPosts.length !== 1 ? "s" : ""}
+              {!selectedGenre && !selectedLanguage && " in any genre"}
+            </>
+          )}
+          {filteredPosts.length === 0 && (
+            <>
+              {selectedLanguage === Language.ENG ? (
+                <>
+                  <span>No </span>
+                  <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                    English{" "}
+                  </span>
+                </>
+              ) : (
+                "No "
+              )}
+              posts to show 🥲
+            </>
+          )}
+        </div>
+      </div>
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
+        {filteredPosts.map(
+          ({ title, coverImage, date, slug, excerpt, genre, language }) => (
+            <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">
+              <div key={slug} className="h-full flex">
+                <PostPreview
+                  title={title}
+                  coverImage={coverImage}
+                  date={date}
+                  slug={slug}
+                  excerpt={excerpt}
+                  genre={genre}
+                  language={language}
+                />
+              </div>
+            </Link>
+          )
         )}
       </div>
-      <BottomBar filteredPosts={filteredPosts.length}></BottomBar>
+      <BottomBar filteredPosts={filteredPosts.length} />
     </section>
   );
 };
