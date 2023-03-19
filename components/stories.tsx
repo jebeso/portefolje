@@ -52,51 +52,55 @@ const Stories = ({ posts }: Props) => {
       <h2 className="mb-8 text-5xl md:text-7x tracking-tighter leading-tight"></h2>
       <div className="mb-8 text-center md:text-left flex flex-col">
         <div>
-          <button
-            className={`${buttonStyling} ${
-              selectedGenre === null
-                ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
-                : "transition duration-500 ease-in-out dark:border-violet-800"
-            }`}
-            onClick={() => setSelectedGenre(null)}
-          >
-            All
-          </button>
-          {Object.values(Genre).map((genre?) => (
+          <div className="pb-0.5">
             <button
-              key={genre}
               className={`${buttonStyling} ${
-                selectedGenre === genre
-                  ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600 text-white"
+                selectedGenre === null
+                  ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
                   : "transition duration-500 ease-in-out dark:border-violet-800"
               }`}
-              onClick={() => {
-                if (selectedGenre === genre) {
-                  setSelectedGenre(null);
-                } else {
-                  setSelectedGenre(genre);
-                }
-              }}
+              onClick={() => setSelectedGenre(null)}
             >
-              {genre}
+              Any
             </button>
-          ))}
-          <button
-            className={`${buttonStyling} w-44 md:w-42 ${
-              selectedLanguage === Language.ENG
-                ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
-                : "transition duration-500 ease-in-out dark:border-violet-800"
-            }`}
-            onClick={() =>
-              setSelectedLanguage(
-                selectedLanguage === Language.ENG ? null : Language.ENG
-              )
-            }
-          >
-            {selectedLanguage === Language.ENG
-              ? "Bob's your uncle 🍵"
-              : "Show English only"}
-          </button>
+            {Object.values(Genre).map((genre?) => (
+              <button
+                key={genre}
+                className={`${buttonStyling} ${
+                  selectedGenre === genre
+                    ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out dark:border-violet-700 border-violet-600 text-white"
+                    : "transition duration-500 ease-in-out dark:border-violet-800"
+                }`}
+                onClick={() => {
+                  if (selectedGenre === genre) {
+                    setSelectedGenre(null);
+                  } else {
+                    setSelectedGenre(genre);
+                  }
+                }}
+              >
+                {genre}
+              </button>
+            ))}
+          </div>
+          <div className="pb-0.5">
+            <button
+              className={`${buttonStyling} w-44 md:w-42 ${
+                selectedLanguage === Language.ENG
+                  ? "dark:bg-violet-900 bg-violet-500 transition duration-500 ease-in-out border-violet-700 text-white"
+                  : "transition duration-500 ease-in-out dark:border-violet-800"
+              }`}
+              onClick={() =>
+                setSelectedLanguage(
+                  selectedLanguage === Language.ENG ? null : Language.ENG
+                )
+              }
+            >
+              {selectedLanguage === Language.ENG
+                ? "Bob's your uncle!"
+                : "Show English only"}
+            </button>
+          </div>
         </div>
         <div></div>
         <div>
@@ -112,26 +116,40 @@ const Stories = ({ posts }: Props) => {
           {filteredPosts.length > 0 && (
             <>
               Showing{" "}
-              {filteredPosts.length <= 9
-                ? [
-                    "one",
-                    "two",
-                    "three",
-                    "four",
-                    "five",
-                    "six",
-                    "seven",
-                    "eight",
-                    "nine",
-                  ][filteredPosts.length - 1]
-                : filteredPosts.length}{" "}
+              <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                {" "}
+                {filteredPosts.length <= 9
+                  ? [
+                      "one",
+                      "two",
+                      "three",
+                      "four",
+                      "five",
+                      "six",
+                      "seven",
+                      "eight",
+                      "nine",
+                    ][filteredPosts.length - 1]
+                  : filteredPosts.length}{" "}
+                {selectedLanguage || !selectedGenre
+                  ? null
+                  : selectedGenre === "IT"
+                  ? "IT"
+                  : selectedGenre.toLowerCase()}
+              </span>{" "}
               {selectedLanguage === Language.ENG && (
                 <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
                   English{" "}
+                  {selectedGenre &&
+                    `${
+                      selectedGenre.toLowerCase() === "it"
+                        ? "IT"
+                        : selectedGenre.toLowerCase()
+                    } `}
                 </span>
               )}
-              {selectedGenre && `${selectedGenre.toLowerCase()} `}
               post{filteredPosts.length !== 1 ? "s" : ""}
+              {!selectedGenre && !selectedLanguage && " in any genre"}
             </>
           )}
           {filteredPosts.length === 0 && (
