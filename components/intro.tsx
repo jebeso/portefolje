@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Intro = () => {
-  const quips = ["Things I write go here"];
-  //<CatchyTitle type={cliché} />"
+  const quips = ["Things I write go here!"];
 
   const getRandomQuipIndex = (currentQuipIndex) => {
     let newIndex;
