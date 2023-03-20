@@ -1,5 +1,5 @@
 ---
-title: "Jeg kodet denne nettsiden"
+title: "Jeg lagde denne nettsiden"
 excerpt: "Jeg har alltid ønsket meg en nettside og et sted å publisere og dele det jeg skriver. Så nå som jeg har lært litt om front-end-utvikling, så lagde jeg den. Dette er det Chat GPT har å si om koden: Jeg har alltid ønsket meg en nettside og et sted å publisere og dele det jeg skriver. Så nå som jeg har lært litt om front-end-utvikling, så lagde jeg den. Dette er det Chat GPT har å si om koden: På en mørk og stormfull kveld satt koderen Jens dypt konsentrert ved skrivebordet i sitt hjemmekontor. Det var sent, men han hadde nettopp fullført et av sine mest ambisiøse prosjekter til dags dato. Han hadde skapt en nettside hvor man kunne publisere og lese historier i ulike sjangre og språk. Folk kunne filtrere historiene etter sjanger, språk og søkeord."
 genre: "IT"
 date: "2023-03-04T17:14:07.322Z"
