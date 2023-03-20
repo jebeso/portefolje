@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import Switch from "react-switch";
 import { useState, useEffect } from "react";
-import { SunIcon, MoonIcon, SparklesIcon } from "@heroicons/react/solid";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
 const ThemeChanger = () => {
   const { systemTheme, theme, setTheme } = useTheme();
