@@ -44,7 +44,7 @@ const PostPreview = ({ title, date, excerpt, genre }: Props) => {
       </div>
       <p className="text-lg">{excerpt}..</p>
       <div>
-        <span className="whitespace-nowrap dark:text-violet-300 text-violet-600 lg:hidden">
+        <span className="whitespace-nowrap dark:text-violet-300 text-violet-600">
           Read more...
         </span>
       </div>

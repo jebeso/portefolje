@@ -65,7 +65,7 @@ const Stories = ({ posts }: Props) => {
           {filteredPosts.length > 0 && (
             <>
               Showing{" "}
-              <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+              <span className="font-bold dark:text-violet-300 text-violet-700">
                 {" "}
                 {filteredPosts.length <= 9
                   ? [
@@ -87,7 +87,7 @@ const Stories = ({ posts }: Props) => {
                   : selectedGenre.toLowerCase()}
               </span>{" "}
               {selectedLanguage === Language.ENG && (
-                <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                <span className="font-bold dark:text-violet-300 text-violet-700">
                   English{" "}
                   {selectedGenre &&
                     `${
@@ -106,7 +106,7 @@ const Stories = ({ posts }: Props) => {
               {selectedLanguage === Language.ENG ? (
                 <>
                   <span>No </span>
-                  <span style={{ color: "#4c1d95", fontWeight: "bold" }}>
+                  <span className="font-bold dark:text-violet-300 text-violet-700">
                     English{" "}
                   </span>
                 </>
@@ -118,7 +118,7 @@ const Stories = ({ posts }: Props) => {
           )}
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 lg:grid-cols-2 gap-x-10 xl:gap-x-10 md:px-12 pt-10">
+      <div className="max-w-3xl mx-auto grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 pt-10">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre, language }) => (
             <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">

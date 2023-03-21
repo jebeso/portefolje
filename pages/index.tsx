@@ -23,7 +23,7 @@ export default function Index({ allPosts }: Props) {
     <div className={ptSerif.className}>
       <Layout>
         <Head>
-          <title>{`jens.bechsor.no`}</title>
+          <title>{`Jens Bech-Sørensen`}</title>
         </Head>
         <Container>
           <TopBar />
