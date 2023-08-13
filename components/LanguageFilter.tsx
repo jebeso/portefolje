@@ -13,15 +13,14 @@ const LanguageFilter: React.FC<Props> = ({
     "mr-1 mb-1 border border-violet-400 rounded-full px-3 py-1 outline-none";
   const darkBackgroundStyling = "dark:bg-violet-900";
   const darkBorderStyling = "dark:border-violet-800";
-  const transitionStyling = "transition duration-300 ease-in-out";
 
   return (
     <div className="pb-0.5">
       <button
         className={`${buttonStyling} w-44 md:w-42 ${
           selectedLanguage === Language.ENG
-            ? `${darkBackgroundStyling} bg-violet-500 ${transitionStyling} border-violet-700 text-white`
-            : `${transitionStyling} ${darkBorderStyling}`
+            ? `${darkBackgroundStyling} bg-violet-500 border-violet-700 text-white`
+            : `${darkBorderStyling}`
         }`}
         onClick={() =>
           setSelectedLanguage(

@@ -8,8 +8,6 @@ ogImage:
   url: "/assets/blog/paper.jpg"
 ---
 
-![](/kode24-innlegg-200323.jpg)
-
 Jeg rakk nesten å fullføre Academic Work sitt 12-ukers omskoleringsprogram uten å høre gjetord om Copilot. Jeg var knapt flyvedyktig selv, og dessuten var all hjernekapasitet viet til løkker, fnutter og undervisning. I dag, syv måneder senere, repeterer jeg heller med Bing enn å maile den dyktige læreren jeg hadde. Beklager, Tomas, det går bare raskere!
 
 I høst var det umulig å forutse betydningen som Copilot, ChatGPT og Bing(!) straks skulle få i arbeidshverdagen min. Ser framtiden lys ut som Prompt Engineer? Det er vanskelig å si, men som junior fullstack utvikler hos Elkjøp fremstår språkmodellene som nyskapende på linje med smarttelefonen. De har kommet for å bli, og her gjelder det å henge på!

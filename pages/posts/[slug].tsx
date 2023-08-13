@@ -10,7 +10,6 @@ import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import TopBar from "../../components/topbar";
 import { ptSerif } from "..";
 import BottomBar from "../../components/bottombar";
 
@@ -28,16 +27,15 @@ export default function Post({ post, preview }: Props) {
     <div className={ptSerif.className}>
       <Layout preview={preview}>
         <Container>
-          <TopBar />
           <SlugHeader />
           {router.isFallback ? (
             <PostTitle>Loading…</PostTitle>
           ) : (
             <>
-              <article className="mb-32 xl:px-40">
+              <article className="mb-32">
                 <Head>
                   <title>{`${post.title} | Jens Bech-Sørensen`}</title>{" "}
-                  <meta property="og:image" content={post.ogImage.url} />
+                  <meta property="og:image" content={post.ogImage?.url} />
                 </Head>
                 <PostHeader
                   title={post.title}

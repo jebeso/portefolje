@@ -10,9 +10,6 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
-        darkHover: '#0b0416',
-        lessDarkHover: '#2c1155',
-        offBlack: '#151515',
       },
       spacing: {
         28: '7rem',
