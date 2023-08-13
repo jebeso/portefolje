@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import type Post from "../interfaces/post";
-import { Genre, Language } from "../components/stories";
 
 export const useFilteredPosts = (
   posts: Post[],
-  selectedLanguage: Language | null,
-  selectedGenre: Genre | null,
+  selectedLanguage: null,
+  selectedGenre: null,
   searchTerm: string
 ): Post[] => {
   const [filteredPosts, setFilteredPosts] = useState<Post[]>([]);
