@@ -30,7 +30,7 @@ const Stories = ({ posts }: Props) => {
           />
         </div>
       </div>
-      <div className="mx-auto grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 pt-10">
+      <div className="mx-auto grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-10 pt-2">
         {filteredPosts.map(
           ({ title, coverImage, date, slug, excerpt, genre, language }) => (
             <Link key={slug} as={`/posts/${slug}`} href="/posts/[slug]">

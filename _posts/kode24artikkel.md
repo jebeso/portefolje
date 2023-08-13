@@ -1,5 +1,5 @@
 ---
-title: "Kode 24: Ny utvikler med språkmodeller i verktøykassa"
+title: "Leserinnlegg: Kode 24"
 excerpt: "Jeg rakk nesten å fullføre Academic Work sitt 12-ukers omskoleringsprogram uten å høre gjetord om Copilot. Jeg var knapt flyvedyktig selv, og dessuten var all hjernekapasitet viet til løkker, fnutter og undervisning. I dag, syv måneder senere, repeterer jeg heller med Bing enn å maile den dyktige læreren jeg hadde. Beklager, Tomas, det går bare raskere! I høst var det umulig å forutse betydningen som Copilot, ChatGPT og Bing(!) straks skulle få i arbeidshverdagen min. Ser framtiden lys ut som Prompt Engineer? Det er vanskelig å si, men som junior fullstack utvikler hos Elkjøp fremstår språkmodellene som nyskapende på linje med smarttelefonen. De har kommet for å bli, og her gjelder det å henge på!"
 genre: "IT"
 date: "2023-03-17T12:14:07.322Z"
@@ -7,6 +7,8 @@ language: "NOR"
 ogImage:
   url: "/assets/blog/paper.jpg"
 ---
+
+[Publisert i Kode 24](https://www.kode24.no/artikkel/jeg-snakker-heller-med-bing-enn-a-maile-laereren/78775870)
 
 Jeg rakk nesten å fullføre Academic Work sitt 12-ukers omskoleringsprogram uten å høre gjetord om Copilot. Jeg var knapt flyvedyktig selv, og dessuten var all hjernekapasitet viet til løkker, fnutter og undervisning. I dag, syv måneder senere, repeterer jeg heller med Bing enn å maile den dyktige læreren jeg hadde. Beklager, Tomas, det går bare raskere!
 

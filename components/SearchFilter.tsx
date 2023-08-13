@@ -13,7 +13,7 @@ const SearchFilter: React.FC<Props> = ({ searchTerm, handleSearchTerm }) => {
   return (
     <div>
       <input
-        className={searchStyling}
+        className={searchStyling + "pl-4"}
         type="text"
         value={searchTerm}
         onChange={handleSearchTerm}

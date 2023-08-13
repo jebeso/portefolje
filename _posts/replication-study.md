@@ -9,7 +9,7 @@ ogImage:
   url1: ""
 ---
 
-[I published a study](https://link.springer.com/article/10.1007/s40806-016-0048-6) as part of my master's degree in Psychology. It has been cited a lot, so I guess you could say my academic career was short and impactful?
+[Published in Evolutionary Psychological Science](https://link.springer.com/article/10.1007/s40806-016-0048-6) as part of my master's degree in Psychology. It has been cited a lot, so I guess you could say my academic career was short and impactful.
 
 ![](/publication.jpg)
 
