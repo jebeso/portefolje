@@ -1,5 +1,5 @@
 ---
-title: "Owning my data"
+title: "Nextcloud: Your very own cloud"
 excerpt: "I found out my Google Location History was a 780 megabyte text file. That's when I decided to better protect my data ownership. The aim was to limit the amount and type of data I share, for both security and privacy reasons, while avoiding becoming a crazy person. Now I feel in control, although I'm certain actual security people could poke holes in my setup all day. To get out of Google Drive, I set up a self-hosted NextCloud Instance on a Raspberry Pi. Initially, this was a bit of a hassle to get going, but today I have it set up with remote access, proper security certificates and multi-factored authentication. This gives me a great replacement for Google Drive, Google Photos and all Office products. There are corresponding apps and sync on all platforms, and I can share files and collaborate on office files."
 genre: "IT"
 coverImage: "/assets/blog/phone.jpg"
@@ -10,8 +10,6 @@ ogImage:
 ---
 
 I found out my Google Location History was a 780 megabyte text file. That's when I decided to better protect my data ownership. The aim was to limit the amount and type of data I share, for both security and privacy reasons, while avoiding becoming a crazy person. Now I feel in control, although I'm certain actual security people could poke holes in my setup all day.
-
-![](/jenscloud.jpg)
 
 To get out of Google Drive, I set up a self-hosted [NextCloud Instance on a Raspberry Pi](https://nextcloudpi.com/). Initially, this was a bit of a hassle to get going, but today I have it set up with remote access, proper security certificates and multi-factored authentication. This gives me a great replacement for Google Drive, Google Photos and all Office products. There are corresponding apps and sync on all platforms, and I can share files and collaborate on office files.
 

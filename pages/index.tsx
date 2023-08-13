@@ -6,8 +6,6 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
 import { Roboto } from "@next/font/google";
-import TopBar from "../components/topbar";
-import Icons from "../components/icons";
 import BottomBar from "../components/bottombar";
 
 export const ptSerif = Roboto({
@@ -26,9 +24,7 @@ export default function Index({ allPosts }: Props) {
           <title>{`Jens Bech-Sørensen`}</title>
         </Head>
         <Container>
-          <TopBar />
           <Intro />
-          <Icons />
           {<Stories posts={allPosts} />}
         </Container>
       </Layout>

@@ -7,8 +7,6 @@ interface Props {
   date: string;
 }
 
-const prefix = "Written ";
-
 const PostHeader = ({ title, date }: Props) => (
   <>
     <PostTitle>{title}</PostTitle>
@@ -16,8 +14,8 @@ const PostHeader = ({ title, date }: Props) => (
     <div className="mb-8 md:mb-16 sm:mx-0" />
     <div className="max-w-2xl mx-auto">
       <div className="block md:hidden mb-6" />
-      <div className="mb-6 text-lg dark:text-violet-300 text-violet-700 text-center select-none mx-auto">
-        <DateFormatter dateString={date} prefix={prefix} />
+      <div className="mb-6 text-lg dark:text-gray-300 text-gray-700 text-center select-none mx-auto">
+        <DateFormatter dateString={date} />
       </div>
     </div>
   </>
