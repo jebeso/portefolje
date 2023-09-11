@@ -19,7 +19,8 @@ type Props = {
 export default function Index({ allPosts }: Props) {
   return (
     <div className={ptSerif.className}>
-      <Layout>
+      <h1 className="text-4xl text-center pt-80 select-none">hei</h1>
+      {/* <Layout>
         <Head>
           <title>{`Jens Bech-Sørensen`}</title>
         </Head>
@@ -27,7 +28,7 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           {<Stories posts={allPosts} />}
         </Container>
-      </Layout>
+      </Layout> */}
     </div>
   );
 }
