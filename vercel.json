@@ -1,12 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no/"
-    },
+  "redirects": [
     {
       "source": "/:path*",
-      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no/:path*"
+      "destination": "https://publish.obsidian.md/jens/:path*",
+      "permanent": true
     }
   ]
 }
