@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no/notes"
+      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no"
     },
     {
       "source": "/:path*",
-      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no/notes:path*"
+      "destination": "https://publish.obsidian.md/serve?url=jens.bechsor.no/:path*"
     }
   ]
 }
