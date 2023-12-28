@@ -1,0 +1,14 @@
+@import './Theme.module.scss';
+
+.blogPage {
+    & h1 {
+        margin-bottom: .5rem;
+    }
+    & ul {
+        padding: 0;
+    }
+}
+
+.headerDate {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,20 @@
+$background: #fffcf2;
+$primary: #403d39;
+$secondary: #ccc5b9;
+$accent: #077ec3;
+$textPrimary: #252422;
+
+$backgroundLight: lighten($background, 2%);
+
+$primaryLight: lighten($primary, 3%);
+$primaryLighter: lighten($primary, 50%);
+$primaryDark: darken($primary, 3%);
+
+$secondaryLight: lighten($secondary, 3%);
+$secondaryDark: darken($secondary, 3%);
+
+$textPrimaryLight: lighten($textPrimary, 3%);
+$textPrimaryDark: darken($textPrimary, 3%);
+
+$codeBackground: lighten($secondary, 18%);
+$codeLight: lighten(ghostwhite, 0.6%);

@@ -1,0 +1,8 @@
+{
+  "title": "A Very Cool Blog",
+  "siteDescription": "a cool description of my site is here. i can post about whatever i want and i can do it easily with markdown and nextjs",
+  "social": {
+    "github": "https://github.com/",
+    "gitlab": "https://gitlab.com/"
+  }
+}

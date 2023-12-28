@@ -1,0 +1,18 @@
+@import './Theme.module.scss';
+
+.header {
+margin-bottom: 1rem;
+
+  & h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 600;
+
+    a {
+    text-decoration: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
