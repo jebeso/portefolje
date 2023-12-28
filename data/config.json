@@ -1,8 +1,8 @@
 {
-  "title": "A Very Cool Blog",
-  "siteDescription": "a cool description of my site is here. i can post about whatever i want and i can do it easily with markdown and nextjs",
+  "title": "Jens Bech-Sørensen",
+  "siteDescription": "LinkedIn",
   "social": {
-    "github": "https://github.com/",
+    "github": "https://github.com/jensbech",
     "gitlab": "https://gitlab.com/"
   }
 }

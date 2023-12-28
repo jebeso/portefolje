@@ -15,7 +15,7 @@ const BlogDate = ({ date, isList }) => {
 
     return (
         <span className={headerDate}>
-            {!isList && <span>Last Updated: </span>}
+            {!isList && <span>Published </span>}
             <time dateTime={newDate} itemProp="dateModified">
                 {formatted}
             </time>

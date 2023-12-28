@@ -4,12 +4,16 @@ import { footerContainer, footerDescription, footerLinkDecoration, footerLinks, 
 const Footer = props =>
     <footer className={footerContainer}>
         <div className={footerLeft}>
-            <p>myName</p>
+            <a href='mailto:jens@bechsor.no'>
+            <p>jens@bechsor.no</p>
+            </a>
         </div>
 
         <div className={footerRight}>
-            <div className={footerDescription}>
-                <p>{props.siteDescription}</p>
+                <div className={footerDescription}>
+                    <p>
+                        <a href='https://www.linkedin.com/in/jensbs/'>{props.siteDescription}</a>
+                    </p>
             </div>
         </div>
     </footer>
