@@ -1,0 +1,22 @@
+// .blogPostContainer > h1 {
+//     margin-bottom: 0;
+// }
+
+.blogPostContainer a {
+    text-decoration: none;
+}
+
+.blogPostContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & h1 {
+        margin-top: 0.3rem;
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+    }
+}

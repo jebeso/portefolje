@@ -1,0 +1,28 @@
+@import './Theme.module.scss';
+
+.layout {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.layout .info_page {
+  color: $textPrimary;
+}
+
+.content {
+  flex-grow: 1;
+  width: 90vw;
+  max-width: 700px;
+  margin: 4vh auto 0 auto;
+}
+@media (min-width: 768px) {
+  .layout {
+    display: block;
+  }
+
+  .content {
+    padding: 1rem;
+    margin: 7vh auto 0 auto;
+    text-align: left;
+  }
+}

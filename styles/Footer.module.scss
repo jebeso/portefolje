@@ -1,0 +1,36 @@
+.footerContainer {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+
+  & p {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+}
+
+.footerLeft {
+  & p {
+    font-style: normal;
+    border-right: 1px solid #ebebeb;
+    padding-right: 0.7rem;
+  }
+}
+
+.footerRight {
+  padding-left: 0.7rem;
+}
+
+.footerLinkDecoration a {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    max-width: 700px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
