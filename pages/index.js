@@ -11,9 +11,9 @@ const Index = props =>
     social={props?.social}
   >
     <section className={indexContainer}>
-      <BlogList allBlogs={props.allBlogs} siteTitle={props.title}/>
+      <BlogList allBlogs={props.allBlogs} siteTitle={props.title} />
     </section>
-  </Layout>
+  </Layout >
 
 
 export default Index
