@@ -1,5 +1,5 @@
 ---
-title: Notat - DnD for viderekomne
+title: D&D for viderekomne
 author: "jens@bechsor.no"
 description: asd
 date: "2023-12-29"

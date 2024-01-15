@@ -1,5 +1,5 @@
 ---
-title: Notat - I want online privacy
+title: Give me privacy
 author: "jens@bechsor.no"
 description: asd
 date: "2023-02-07"

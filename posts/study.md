@@ -1,5 +1,5 @@
 ---
-title: Publikasjon - Mate Preferences
+title: Sex Differences in Mate Preferences
 author: "jens@bechsor.no"
 description: Publication - Evolutionary Psychological Science
 date: "2016-01-29"

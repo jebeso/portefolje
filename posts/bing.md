@@ -1,5 +1,5 @@
 ---
-title: Leserinnlegg - AI for nye utviklere
+title: AI for nye utviklere
 author: "jens@bechsor.no"
 description: asd
 date: "2023-03-17"

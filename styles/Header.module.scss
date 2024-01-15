@@ -1,7 +1,7 @@
 @import './Theme.module.scss';
 
 .header {
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
   & h1 {
     margin-bottom: 0;
@@ -9,8 +9,9 @@ margin-bottom: 1rem;
     font-weight: 600;
 
     a {
-    text-decoration: none;
+      text-decoration: none;
     }
+
     &:hover {
       cursor: pointer;
     }

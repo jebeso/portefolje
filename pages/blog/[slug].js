@@ -33,7 +33,6 @@ const BlogTemplate = (props) => {
                         <ReactMarkdown components={renderers} children={props.markdownBody} />
                     </div>
                 </article>
-                <hr />
             </Layout>
         </>
     )
