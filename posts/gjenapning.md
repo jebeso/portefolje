@@ -1,5 +1,5 @@
 ---
-title: Hvem vil du være etter gjenåpningen?
+title: "Hvem vil du være etter gjenåpningen?"
 author: "jens@bechsor.no"
 description: asd
 date: "2021-10-27"
